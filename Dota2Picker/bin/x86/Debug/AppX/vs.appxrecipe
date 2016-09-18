@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>2313fc0f-9253-430a-850b-ff7afe20e606</PackageIdentityName>
     <PackageIdentityPublisher>CN=karad</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-18T08:19:21.237</Modified>
+      <Modified>2016-09-18T11:43:27.786</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.exe">
+    <AppxPackagedFile Include="C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.exe">
       <PackagePath>entrypoint\Dota2Picker.exe</PackagePath>
-      <Modified>2016-09-18T08:19:18.888</Modified>
+      <Modified>2016-09-18T11:43:23.853</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\karad\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -448,45 +448,45 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T20:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-09-16T09:24:10.347</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T14:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T14:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T14:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T14:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T14:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T14:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T14:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.xr.xml">
+    <AppxPackagedFile Include="C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.xr.xml">
       <PackagePath>Dota2Picker.xr.xml</PackagePath>
       <Modified>2016-09-17T18:41:10.230</Modified>
     </AppxPackagedFile>
@@ -494,13 +494,13 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-09-15T06:24:45.349</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-09-18T08:19:20.735</Modified>
+      <Modified>2016-09-18T11:43:26.897</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\Dota2Picker.exe">
+    <AppxPackagedFile Include="C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\Dota2Picker.exe">
       <PackagePath>Dota2Picker.exe</PackagePath>
-      <Modified>2016-09-18T08:19:21.200</Modified>
+      <Modified>2016-09-18T11:43:27.764</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
