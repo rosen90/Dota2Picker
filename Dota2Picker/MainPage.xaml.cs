@@ -86,14 +86,14 @@ namespace Dota2Picker
 
         private void SearchBox_SelectionChanged(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(this.SearchBox.Text))
-            {
-                ClearSearchBtn.Visibility = Visibility.Collapsed;
-            }
-            else
-            {
-                ClearSearchBtn.Visibility = Visibility.Visible;
-            }
+            //if (string.IsNullOrWhiteSpace(this.SearchBox.Text))
+            //{
+            //    ClearSearchBtn.Visibility = Visibility.Collapsed;
+            //}
+            //else
+            //{
+            //    ClearSearchBtn.Visibility = Visibility.Visible;
+            //}
         }
 
         private void ClearSearchBtn_Click(object sender, RoutedEventArgs e)
