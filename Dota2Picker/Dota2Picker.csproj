@@ -89,6 +89,119 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Database\HeroData.db" />
+    <Content Include="Resources\Images\1.png" />
+    <Content Include="Resources\Images\10.png" />
+    <Content Include="Resources\Images\100.png" />
+    <Content Include="Resources\Images\101.png" />
+    <Content Include="Resources\Images\102.png" />
+    <Content Include="Resources\Images\103.png" />
+    <Content Include="Resources\Images\104.png" />
+    <Content Include="Resources\Images\105.png" />
+    <Content Include="Resources\Images\106.png" />
+    <Content Include="Resources\Images\107.png" />
+    <Content Include="Resources\Images\108.png" />
+    <Content Include="Resources\Images\109.png" />
+    <Content Include="Resources\Images\11.png" />
+    <Content Include="Resources\Images\110.png" />
+    <Content Include="Resources\Images\111.png" />
+    <Content Include="Resources\Images\112.png" />
+    <Content Include="Resources\Images\12.png" />
+    <Content Include="Resources\Images\13.png" />
+    <Content Include="Resources\Images\14.png" />
+    <Content Include="Resources\Images\15.png" />
+    <Content Include="Resources\Images\16.png" />
+    <Content Include="Resources\Images\17.png" />
+    <Content Include="Resources\Images\18.png" />
+    <Content Include="Resources\Images\19.png" />
+    <Content Include="Resources\Images\2.png" />
+    <Content Include="Resources\Images\20.png" />
+    <Content Include="Resources\Images\21.png" />
+    <Content Include="Resources\Images\22.png" />
+    <Content Include="Resources\Images\23.png" />
+    <Content Include="Resources\Images\24.png" />
+    <Content Include="Resources\Images\25.png" />
+    <Content Include="Resources\Images\26.png" />
+    <Content Include="Resources\Images\27.png" />
+    <Content Include="Resources\Images\28.png" />
+    <Content Include="Resources\Images\29.png" />
+    <Content Include="Resources\Images\3.png" />
+    <Content Include="Resources\Images\30.png" />
+    <Content Include="Resources\Images\31.png" />
+    <Content Include="Resources\Images\32.png" />
+    <Content Include="Resources\Images\33.png" />
+    <Content Include="Resources\Images\34.png" />
+    <Content Include="Resources\Images\35.png" />
+    <Content Include="Resources\Images\36.png" />
+    <Content Include="Resources\Images\37.png" />
+    <Content Include="Resources\Images\38.png" />
+    <Content Include="Resources\Images\39.png" />
+    <Content Include="Resources\Images\4.png" />
+    <Content Include="Resources\Images\40.png" />
+    <Content Include="Resources\Images\41.png" />
+    <Content Include="Resources\Images\42.png" />
+    <Content Include="Resources\Images\43.png" />
+    <Content Include="Resources\Images\44.png" />
+    <Content Include="Resources\Images\45.png" />
+    <Content Include="Resources\Images\46.png" />
+    <Content Include="Resources\Images\47.png" />
+    <Content Include="Resources\Images\48.png" />
+    <Content Include="Resources\Images\49.png" />
+    <Content Include="Resources\Images\5.png" />
+    <Content Include="Resources\Images\50.png" />
+    <Content Include="Resources\Images\51.png" />
+    <Content Include="Resources\Images\52.png" />
+    <Content Include="Resources\Images\53.png" />
+    <Content Include="Resources\Images\54.png" />
+    <Content Include="Resources\Images\55.png" />
+    <Content Include="Resources\Images\56.png" />
+    <Content Include="Resources\Images\57.png" />
+    <Content Include="Resources\Images\58.png" />
+    <Content Include="Resources\Images\59.png" />
+    <Content Include="Resources\Images\6.png" />
+    <Content Include="Resources\Images\60.png" />
+    <Content Include="Resources\Images\61.png" />
+    <Content Include="Resources\Images\62.png" />
+    <Content Include="Resources\Images\63.png" />
+    <Content Include="Resources\Images\64.png" />
+    <Content Include="Resources\Images\65.png" />
+    <Content Include="Resources\Images\66.png" />
+    <Content Include="Resources\Images\67.png" />
+    <Content Include="Resources\Images\68.png" />
+    <Content Include="Resources\Images\69.png" />
+    <Content Include="Resources\Images\7.png" />
+    <Content Include="Resources\Images\70.png" />
+    <Content Include="Resources\Images\71.png" />
+    <Content Include="Resources\Images\72.png" />
+    <Content Include="Resources\Images\73.png" />
+    <Content Include="Resources\Images\74.png" />
+    <Content Include="Resources\Images\75.png" />
+    <Content Include="Resources\Images\76.png" />
+    <Content Include="Resources\Images\77.png" />
+    <Content Include="Resources\Images\78.png" />
+    <Content Include="Resources\Images\79.png" />
+    <Content Include="Resources\Images\8.png" />
+    <Content Include="Resources\Images\80.png" />
+    <Content Include="Resources\Images\81.png" />
+    <Content Include="Resources\Images\82.png" />
+    <Content Include="Resources\Images\83.png" />
+    <Content Include="Resources\Images\84.png" />
+    <Content Include="Resources\Images\85.png" />
+    <Content Include="Resources\Images\86.png" />
+    <Content Include="Resources\Images\87.png" />
+    <Content Include="Resources\Images\88.png" />
+    <Content Include="Resources\Images\89.png" />
+    <Content Include="Resources\Images\9.png" />
+    <Content Include="Resources\Images\90.png" />
+    <Content Include="Resources\Images\91.png" />
+    <Content Include="Resources\Images\92.png" />
+    <Content Include="Resources\Images\93.png" />
+    <Content Include="Resources\Images\94.png" />
+    <Content Include="Resources\Images\95.png" />
+    <Content Include="Resources\Images\96.png" />
+    <Content Include="Resources\Images\97.png" />
+    <Content Include="Resources\Images\98.png" />
+    <Content Include="Resources\Images\99.png" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +211,8 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Hero.cs" />
+    <Compile Include="Objects\DataBaseConnector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -127,10 +242,17 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <SDKReference Include="Microsoft.VCLibs, Version=14.0">
+      <Name>Visual C++ 2015 Runtime for Universal Windows Platform Apps</Name>
+    </SDKReference>
+    <SDKReference Include="SQLite.UWP.2015, Version=3.14.2">
+      <Name>SQLite for Universal Windows Platform</Name>
+    </SDKReference>
     <SDKReference Include="WindowsMobile, Version=10.0.14393.0">
       <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

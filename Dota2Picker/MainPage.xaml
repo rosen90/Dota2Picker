@@ -42,7 +42,6 @@
                  Grid.ColumnSpan="9" 
                  FontSize="24" 
                  PlaceholderText="Search..." 
-                 SelectionChanged="SearchBox_SelectionChanged" 
                  Style="{StaticResource TextBoxStyle1}"/>
 
         <!-- Clear text button for the SearchBox-->
