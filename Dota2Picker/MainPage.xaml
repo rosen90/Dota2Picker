@@ -7,7 +7,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <!--<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
     <Grid Background="#61369f">
 
         <Grid.RowDefinitions>
@@ -43,19 +42,6 @@
                  FontSize="24" 
                  PlaceholderText="Search..." 
                  Style="{StaticResource TextBoxStyle1}"/>
-
-        <!-- Clear text button for the SearchBox-->
-        <!--<Button x:Name="ClearSearchBtn" 
-                Visibility="Collapsed" 
-                Grid.Row="0" 
-                Grid.Column="8" 
-                FontSize="20" 
-                HorizontalAlignment="Right" 
-                FontFamily="Segoe MDL2 Assets" 
-                Content="&#xE106;" 
-                Background="Transparent"  
-                Click="ClearSearchBtn_Click"
-                Style="{StaticResource ButtonStyle1}"/>-->
         
         <!-- Show Hide SearchBox-->
         <Button x:Name="SearchBtn" 
@@ -70,22 +56,20 @@
         </Button>
 
         <!--Hamburger Menu -->
-        <!--<RelativePanel 
-            Grid.Row="0" 
-            Grid.Column="0">-->
-            <Button Name ="HamburgerButton" 
-                    FontFamily="Segoe MDL2 Assets" 
-                    Content="&#xE700;" FontSize="36"
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    Click="HamburgerButton_Click" />
-        <!--</RelativePanel>-->
-        
+        <Button Name ="HamburgerButton" 
+                FontFamily="Segoe MDL2 Assets" 
+                Content="&#xE700;" 
+                FontSize="36"
+                Background="Transparent"
+                Grid.Row="0"
+                Grid.Column="0"
+                Click="HamburgerButton_Click" />
+
         <SplitView Name="MySplitView" 
                    Grid.Row="1"
                    Grid.ColumnSpan="5"
                    DisplayMode="CompactOverlay"
-                   OpenPaneLength="200" 
+                   OpenPaneLength="190" 
                    CompactPaneLength="0" 
                    HorizontalAlignment="Left"
                    Grid.RowSpan="4">
@@ -93,7 +77,7 @@
             <SplitView.Pane>
                 <ListBox SelectionMode="Single"
                          Name="IconsListBox" 
-                         Background="LightGray" 
+                         Background="#2b2b2b"
                          SelectionChanged="IconsListBox_SelectionChanged">
 
                     <!--First Item of the list -->
@@ -101,14 +85,17 @@
                         <StackPanel Orientation="Horizontal" >
                             <!--Symbol-->
                             <TextBlock FontFamily="Segoe MDL2 Assets" 
-                                       Foreground="#572b98" 
-                                       FontSize="24" 
+                                       Foreground="White" 
+                                       FontSize="32"
+                                       VerticalAlignment="Center"
                                        Text="&#xE8A9;" />
                             <!--Text-->
                             <TextBlock Text="All Heroes" 
                                        FontSize="20" 
-                                       Foreground="#572b98" 
-                                       Margin="20,0,0,0" />
+                                       VerticalAlignment="Bottom"
+                                       Foreground="White" 
+                                       Margin="15,0,0,0" 
+                                       FontFamily="Georgia" />
                         </StackPanel>
                     </ListBoxItem>
 
@@ -116,15 +103,20 @@
                     <ListBoxItem >
                         <StackPanel Orientation="Horizontal">
                             <!--Symbol -->
-                            <TextBlock FontFamily="Symbola" 
-                                       Foreground="#572b98" 
-                                       Text="&#x1f4aa;" 
-                                       FontSize="24" />
+                            <Image Source="ms-appx:///Resources/strength.png"
+                                   Stretch="Fill"
+                                   Width="32"
+                                   Height="32"
+                                   VerticalAlignment="Top"
+                                   Margin="0,0,0,0"
+                                   HorizontalAlignment="Center"/>
                             <!-- Text -->
                             <TextBlock Text="Strength" 
                                        FontSize="20"
-                                       Foreground="#572b98" 
-                                       Margin="20,0,0,0" />
+                                       Foreground="White" 
+                                       Margin="15,0,0,0" 
+                                       VerticalAlignment="Bottom"
+                                       FontFamily="Georgia" />
                         </StackPanel>
                     </ListBoxItem>
 
@@ -132,16 +124,21 @@
                     <ListBoxItem >
                         <StackPanel Orientation="Horizontal">
                             <!--Symbol-->
-                            <TextBlock FontFamily="Symbola"
-                                       Foreground="#572b98" 
-                                       Text="&#x2604;" 
-                                       FontSize="24" />
+                            <Image Source="ms-appx:///Resources/agility.png"
+                                   Stretch="Fill"
+                                   Width="32"
+                                   Height="32"
+                                   VerticalAlignment="Top"
+                                   Margin="0,0,0,0"
+                                   HorizontalAlignment="Center"/>
 
                             <!--Text-->
                             <TextBlock Text="Agility" 
                                        FontSize="20" 
-                                       Foreground="#572b98" 
-                                       Margin="20,0,0,0" />
+                                       Foreground="White" 
+                                       Margin="15,0,0,0" 
+                                       VerticalAlignment="Bottom"
+                                       FontFamily="Georgia" />
                         </StackPanel>
                     </ListBoxItem>
 
@@ -149,15 +146,21 @@
                     <ListBoxItem >
                         <StackPanel Orientation="Horizontal">
                             <!--Symbol-->
-                            <TextBlock FontFamily="Symbola"
-                                       Foreground="#572b98"
-                                       Text="&#x2743;" 
-                                       FontSize="24" />
+                            <Image Source="ms-appx:///Resources/intelligence.png"
+                                   Stretch="Fill"
+                                   Width="32"
+                                   Height="32"
+                                   VerticalAlignment="Top"
+                                   Margin="0,0,0,0"
+                                   HorizontalAlignment="Center"/>
+                            
                             <!--Text-->
-                            <TextBlock Text="Inelligence" 
+                            <TextBlock Text="Intelligence" 
                                        FontSize="20" 
-                                       Foreground="#572b98"
-                                       Margin="20,0,0,0" />
+                                       Foreground="White"
+                                       Margin="15,0,0,0"
+                                       VerticalAlignment="Bottom"
+                                       FontFamily="Georgia" />
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>

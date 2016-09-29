@@ -16,6 +16,8 @@ using Windows.UI.Xaml.Navigation;
 using Windows.UI.ViewManagement;
 using Dota2Picker.Objects;
 using Dota2Picker.Models;
+using Windows.Devices.Sensors;
+
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -31,15 +33,18 @@ namespace Dota2Picker
             this.InitializeComponent();
             InitializeUi();
 
+            CheckDataBase();
+            CheckDeviceOrientation();
+            Window.Current.SizeChanged += CheckDeviceOrientation;
 
             /*--------------------- Only For Debug -------------------*/
-            List<Hero> AllHeroes = db.getAllHeroes();
+            //List<Hero> AllHeroes = db.getAllHeroes();
 
-            List<Hero> EsIsWeakAgainst = db.GetWeakAgainst(1); // 1 means hero index. It depends on user choice
+            //List<Hero> EsIsWeakAgainst = db.GetWeakAgainst(1); // 1 means hero index. It depends on user choice
 
-            List<Hero> EsIsStrongAgainst = db.GetStrongAgainst(1); // 1 means hero index. It depends on user choice
+            //List<Hero> EsIsStrongAgainst = db.GetStrongAgainst(1); // 1 means hero index. It depends on user choice
             /* ------------------------------------------------------ */
-        
+
         }
 
         public void ColorizeStatusBar()
@@ -93,6 +98,51 @@ namespace Dota2Picker
                 SearchBox.Visibility = Visibility.Collapsed;
             }
 
+        }
+        
+        private void CheckDeviceOrientation(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
+        {
+            var orientation = ApplicationView.GetForCurrentView().Orientation;
+            if (orientation == ApplicationViewOrientation.Landscape)
+            {
+                MySplitView.CompactPaneLength = 56;
+
+                HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.White);
+                SolidColorBrush backgroundBrush = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 43, 43, 43));
+                HamburgerButton.Background = backgroundBrush;
+            }
+            else
+            {
+                MySplitView.CompactPaneLength = 0;
+
+                HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
+                HamburgerButton.Background = new SolidColorBrush(Windows.UI.Colors.Transparent);  
+            }
+        }
+
+        private void CheckDeviceOrientation()
+        {
+            var orientation = ApplicationView.GetForCurrentView().Orientation;
+            if (orientation == ApplicationViewOrientation.Landscape)
+            {
+                MySplitView.CompactPaneLength = 56;
+
+                HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.White);
+                SolidColorBrush backgroundBrush = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 43, 43, 43));
+                HamburgerButton.Background = backgroundBrush;
+            }
+            else
+            {
+                MySplitView.CompactPaneLength = 0;
+
+                HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
+                HamburgerButton.Background = new SolidColorBrush(Windows.UI.Colors.Transparent);
+            }
+        }
+
+        private async void CheckDataBase()
+        {
+            await db.CopyDatabase();
         }
     }
 }

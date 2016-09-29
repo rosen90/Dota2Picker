@@ -1,3 +1,5 @@
+C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\SQLitePCL.Ext.dll
+C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\SQLitePCL.Ext.pri
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\App.xbf
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\MainPage.xbf
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.xr.xml
@@ -24,6 +26,7 @@ C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2P
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Microsoft.VisualBasic.dll
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Microsoft.Win32.Primitives.dll
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\System.Private.DataContractSerialization.dll
+C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\SQLitePCL.dll
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\System.AppContext.dll
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\System.Collections.dll
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\System.Collections.Concurrent.dll
@@ -177,6 +180,8 @@ C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2P
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\FxResources.System.Xml.XDocument.SR.resw
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\FxResources.System.Xml.XmlDocument.SR.resw
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\FxResources.System.Xml.XmlSerializer.SR.resw
+C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\SQLitePCL\en\SQLitePCL.Resources.resw
+C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\Dota2Picker.csproj.GenerateResource.Cache
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\priconfig.xml
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\priconfig.xml.intermediate
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\layout.resfiles
@@ -188,13 +193,11 @@ C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2P
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\qualifiers.txt
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\Dota2Picker.csprojResolveAssemblyReference.cache
-C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\SQLitePCL.Ext.dll
-C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\SQLitePCL.Ext.pri
-C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\SQLitePCL.dll
-C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\SQLitePCL\en\SQLitePCL.Resources.resw
-C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\Dota2Picker.csproj.GenerateResource.Cache
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\resources.en.resfiles
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\resources.en.resfiles.intermediate
 C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\SQLitePCL.Ext.pri.xml
+C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\SQLite.Net.Platform.WinRT.dll
+C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\SQLite.Net.Async.dll
+C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\SQLite.Net.dll
+C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\Dota2Picker.csprojResolveAssemblyReference.cache

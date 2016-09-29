@@ -2,8 +2,6 @@
 using SQLitePCL;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.Storage;
@@ -27,8 +25,7 @@ namespace Dota2Picker.Objects
         //Connect to DataBase
         private async void ConnectDataBase()
         {
-
-            StorageFile fileSource = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Database/" + dbName, UriKind.RelativeOrAbsolute));
+            StorageFile fileSource = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///" + dbName, UriKind.RelativeOrAbsolute));
             StorageFolder desFolder = ApplicationData.Current.LocalFolder;
 
             try
@@ -38,6 +35,27 @@ namespace Dota2Picker.Objects
             catch
             {
                 await fileSource.CopyAsync(desFolder, dbName, NameCollisionOption.ReplaceExisting);
+            }
+        }
+
+        public async Task CopyDatabase()
+        {
+            bool isDatabaseExisting = false;
+
+            try
+            {
+                StorageFile storageFile = await ApplicationData.Current.LocalFolder.GetFileAsync("HeroData.db");
+                isDatabaseExisting = true;
+            }
+            catch
+            {
+                isDatabaseExisting = false;
+            }
+
+            if (!isDatabaseExisting)
+            {
+                StorageFile databaseFile = await Package.Current.InstalledLocation.GetFileAsync("HeroData.db");
+                await databaseFile.CopyAsync(ApplicationData.Current.LocalFolder);
             }
         }
 

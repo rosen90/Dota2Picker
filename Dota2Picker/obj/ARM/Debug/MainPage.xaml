@@ -7,7 +7,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <!--<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
     <Grid Background="#61369f">
 
         <Grid.RowDefinitions>
@@ -18,20 +17,57 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
-        <Rectangle Grid.Row="0" Grid.ColumnSpan="3" Fill="#572b98" />
+        <!--Darker Search bar -->
+        <Rectangle Grid.Row="0" 
+                   Grid.ColumnSpan="10" 
+                   Fill="#572b98" />
 
-        <TextBox x:ConnectionId='1' x:Name="SearchBox" Foreground="#572b98" Visibility="Collapsed" Grid.Row="0" Grid.ColumnSpan="2" Margin="56,0,0,0" FontSize="24" PlaceholderText="Search.." />
+        <!-- Main SearchBox -->
+        <TextBox x:ConnectionId='1' x:Name="SearchBox" 
+                 Foreground="#572b98"
+                 Visibility="Collapsed" 
+                 Grid.Row="0"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="9" 
+                 FontSize="24" 
+                 PlaceholderText="Search..." 
+                 Style="{StaticResource TextBoxStyle1}"/>
+        
+        <!-- Show Hide SearchBox-->
+        <Button x:ConnectionId='2' x:Name="SearchBtn" 
+                Grid.Row="0" 
+                Grid.Column="9" 
+                FontSize="24" 
+                HorizontalAlignment="Right" 
+                FontFamily="Segoe MDL2 Assets" 
+                Content="&#xE1A3;" 
+                Background="Transparent" 
+                                     Style="{StaticResource ButtonStyle1}">
+        </Button>
 
+        <!--Hamburger Menu -->
+        <Button x:ConnectionId='3' Name ="HamburgerButton" 
+                FontFamily="Segoe MDL2 Assets" 
+                Content="&#xE700;" 
+                FontSize="36"
+                Background="Transparent"
+                Grid.Row="0"
+                Grid.Column="0"
+                                              />
 
-        <Button x:ConnectionId='2' Grid.Row="0" Grid.Column="10" FontSize="24" HorizontalAlignment="Right" FontFamily="Segoe MDL2 Assets" Content="&#xE1A3;" Background="Transparent"                      />
-
-        <RelativePanel>
-            <Button x:ConnectionId='5' Name ="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="36"                               />
-        </RelativePanel>
-        <SplitView x:ConnectionId='3' Name="MySplitView" 
-                   Grid.Row="1" 
+        <SplitView x:ConnectionId='4' Name="MySplitView" 
+                   Grid.Row="1"
+                   Grid.ColumnSpan="5"
                    DisplayMode="CompactOverlay"
                    OpenPaneLength="200" 
                    CompactPaneLength="0" 
@@ -39,45 +75,79 @@
                    Grid.RowSpan="4">
 
             <SplitView.Pane>
-                <ListBox x:ConnectionId='4' SelectionMode="Single" Name="IconsListBox" Background="LightGray"                                                 >
+                <ListBox x:ConnectionId='5' SelectionMode="Single"
+                         Name="IconsListBox" 
+                         Background="#2b2b2b"
+                                                                         >
+
+                    <!--First Item of the list -->
                     <ListBoxItem >
                         <StackPanel Orientation="Horizontal" >
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Foreground="#572b98" FontSize="24" Text="&#xE8A9;" />
-                            <TextBlock Text="All Heroes" FontSize="20" Foreground="#572b98" Margin="20,0,0,0" />
+                            <!--Symbol-->
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       Foreground="White" 
+                                       FontSize="24" 
+                                       Text="&#xE8A9;" />
+                            <!--Text-->
+                            <TextBlock Text="All Heroes" 
+                                       FontSize="20" 
+                                       Foreground="White" 
+                                       Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
 
-
+                    <!--Second Item-->
                     <ListBoxItem >
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Symbola" Foreground="#572b98" Text="&#x1f4aa;"  FontSize="24" />
-                            <TextBlock Text="Strength" FontSize="20" Foreground="#572b98" Margin="20,0,0,0" />
+                            <!--Symbol -->
+                            <TextBlock FontFamily="Symbola" 
+                                       Foreground="White" 
+                                       Text="&#x1f4aa;" 
+                                       FontSize="24" />
+                            <!-- Text -->
+                            <TextBlock Text="Strength" 
+                                       FontSize="20"
+                                       Foreground="White" 
+                                       Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
 
-
+                    <!--Third Item-->
                     <ListBoxItem >
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Symbola" Foreground="#572b98" Text="&#x2604;"  FontSize="24" />
-                            <TextBlock Text="Agility" FontSize="20" Foreground="#572b98" Margin="20,0,0,0" />
+                            <!--Symbol-->
+                            <TextBlock FontFamily="Symbola"
+                                       Foreground="White" 
+                                       Text="&#x2604;" 
+                                       FontSize="24" />
+
+                            <!--Text-->
+                            <TextBlock Text="Agility" 
+                                       FontSize="20" 
+                                       Foreground="White" 
+                                       Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
 
-
+                    <!--Fourth Item-->
                     <ListBoxItem >
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Symbola" Foreground="#572b98" Text="&#x2743;"  FontSize="24" />
-                            <TextBlock Text="Inelligence" FontSize="20" Foreground="#572b98" Margin="20,0,0,0" />
+                            <!--Symbol-->
+                            <TextBlock FontFamily="Symbola"
+                                       Foreground="White"
+                                       Text="&#x2743;" 
+                                       FontSize="24" />
+                            <!--Text-->
+                            <TextBlock Text=" Inelligence" 
+                                       FontSize="20" 
+                                       Foreground="White"
+                                       Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
-
                 </ListBox>
-
             </SplitView.Pane>
-
-
         </SplitView>
-
+     
     </Grid>
 </Page>
 
