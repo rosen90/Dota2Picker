@@ -2,6 +2,7 @@
 using SQLitePCL;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.Storage;
@@ -25,6 +26,9 @@ namespace Dota2Picker.Objects
         //Connect to DataBase
         private async void ConnectDataBase()
         {
+
+            var dbFilePath = Path.Combine(ApplicationData.Current.LocalFolder.Path, dbName);
+
             StorageFile fileSource = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///" + dbName, UriKind.RelativeOrAbsolute));
             StorageFolder desFolder = ApplicationData.Current.LocalFolder;
 

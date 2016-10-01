@@ -34,7 +34,7 @@
 
         <!-- Main SearchBox -->
         <TextBox x:ConnectionId='1' x:Name="SearchBox" 
-                 Foreground="#572b98"
+                 Foreground="White"
                  Visibility="Collapsed" 
                  Grid.Row="0"
                  Grid.Column="1"
@@ -69,7 +69,7 @@
                    Grid.Row="1"
                    Grid.ColumnSpan="5"
                    DisplayMode="CompactOverlay"
-                   OpenPaneLength="200" 
+                   OpenPaneLength="190" 
                    CompactPaneLength="0" 
                    HorizontalAlignment="Left"
                    Grid.RowSpan="4">
@@ -86,13 +86,16 @@
                             <!--Symbol-->
                             <TextBlock FontFamily="Segoe MDL2 Assets" 
                                        Foreground="White" 
-                                       FontSize="24" 
+                                       FontSize="32"
+                                       VerticalAlignment="Center"
                                        Text="&#xE8A9;" />
                             <!--Text-->
                             <TextBlock Text="All Heroes" 
-                                       FontSize="20" 
+                                       FontSize="18" 
+                                       VerticalAlignment="Bottom"
                                        Foreground="White" 
-                                       Margin="20,0,0,0" />
+                                       Margin="15,0,0,0" 
+                                       FontFamily="Georgia" />
                         </StackPanel>
                     </ListBoxItem>
 
@@ -100,15 +103,20 @@
                     <ListBoxItem >
                         <StackPanel Orientation="Horizontal">
                             <!--Symbol -->
-                            <TextBlock FontFamily="Symbola" 
-                                       Foreground="White" 
-                                       Text="&#x1f4aa;" 
-                                       FontSize="24" />
+                            <Image Source="ms-appx:///Resources/strength.png"
+                                   Stretch="Fill"
+                                   Width="32"
+                                   Height="32"
+                                   VerticalAlignment="Top"
+                                   Margin="0,0,0,0"
+                                   HorizontalAlignment="Center"/>
                             <!-- Text -->
                             <TextBlock Text="Strength" 
-                                       FontSize="20"
+                                       FontSize="18"
                                        Foreground="White" 
-                                       Margin="20,0,0,0" />
+                                       Margin="15,0,0,0" 
+                                       VerticalAlignment="Bottom"
+                                       FontFamily="Georgia" />
                         </StackPanel>
                     </ListBoxItem>
 
@@ -116,16 +124,21 @@
                     <ListBoxItem >
                         <StackPanel Orientation="Horizontal">
                             <!--Symbol-->
-                            <TextBlock FontFamily="Symbola"
-                                       Foreground="White" 
-                                       Text="&#x2604;" 
-                                       FontSize="24" />
+                            <Image Source="ms-appx:///Resources/agility.png"
+                                   Stretch="Fill"
+                                   Width="32"
+                                   Height="32"
+                                   VerticalAlignment="Top"
+                                   Margin="0,0,0,0"
+                                   HorizontalAlignment="Center"/>
 
                             <!--Text-->
                             <TextBlock Text="Agility" 
-                                       FontSize="20" 
+                                       FontSize="18" 
                                        Foreground="White" 
-                                       Margin="20,0,0,0" />
+                                       Margin="15,0,0,0" 
+                                       VerticalAlignment="Bottom"
+                                       FontFamily="Georgia" />
                         </StackPanel>
                     </ListBoxItem>
 
@@ -133,15 +146,21 @@
                     <ListBoxItem >
                         <StackPanel Orientation="Horizontal">
                             <!--Symbol-->
-                            <TextBlock FontFamily="Symbola"
-                                       Foreground="White"
-                                       Text="&#x2743;" 
-                                       FontSize="24" />
+                            <Image Source="ms-appx:///Resources/intelligence.png"
+                                   Stretch="Fill"
+                                   Width="32"
+                                   Height="32"
+                                   VerticalAlignment="Top"
+                                   Margin="0,0,0,0"
+                                   HorizontalAlignment="Center"/>
+                            
                             <!--Text-->
-                            <TextBlock Text=" Inelligence" 
-                                       FontSize="20" 
+                            <TextBlock Text="Intelligence" 
+                                       FontSize="18" 
                                        Foreground="White"
-                                       Margin="20,0,0,0" />
+                                       Margin="15,0,0,0"
+                                       VerticalAlignment="Bottom"
+                                       FontFamily="Georgia" />
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>

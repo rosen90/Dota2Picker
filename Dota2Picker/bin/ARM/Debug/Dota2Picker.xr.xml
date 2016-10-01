@@ -204,6 +204,15 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
     <RootType FullName="Dota2Picker.MainPage" />
   </Roots.RootTypes>
 </Roots>

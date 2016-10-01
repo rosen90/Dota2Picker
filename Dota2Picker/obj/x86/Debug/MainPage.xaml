@@ -34,7 +34,7 @@
 
         <!-- Main SearchBox -->
         <TextBox x:ConnectionId='1' x:Name="SearchBox" 
-                 Foreground="#572b98"
+                 Foreground="White"
                  Visibility="Collapsed" 
                  Grid.Row="0"
                  Grid.Column="1"
@@ -91,7 +91,7 @@
                                        Text="&#xE8A9;" />
                             <!--Text-->
                             <TextBlock Text="All Heroes" 
-                                       FontSize="20" 
+                                       FontSize="18" 
                                        VerticalAlignment="Bottom"
                                        Foreground="White" 
                                        Margin="15,0,0,0" 
@@ -112,7 +112,7 @@
                                    HorizontalAlignment="Center"/>
                             <!-- Text -->
                             <TextBlock Text="Strength" 
-                                       FontSize="20"
+                                       FontSize="18"
                                        Foreground="White" 
                                        Margin="15,0,0,0" 
                                        VerticalAlignment="Bottom"
@@ -134,7 +134,7 @@
 
                             <!--Text-->
                             <TextBlock Text="Agility" 
-                                       FontSize="20" 
+                                       FontSize="18" 
                                        Foreground="White" 
                                        Margin="15,0,0,0" 
                                        VerticalAlignment="Bottom"
@@ -156,7 +156,7 @@
                             
                             <!--Text-->
                             <TextBlock Text="Intelligence" 
-                                       FontSize="20" 
+                                       FontSize="18" 
                                        Foreground="White"
                                        Margin="15,0,0,0"
                                        VerticalAlignment="Bottom"
