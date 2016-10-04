@@ -35,7 +35,6 @@ namespace Dota2Picker
 
             /*--------------------- Only For Debug -------------------*/
             AllHeroesList = db.getAllHeroes();
-            txtSize.Text = AllHeroesList.Count.ToString();
             //List<Hero> EsIsWeakAgainst = db.GetWeakAgainst(1); // 1 means hero index. It depends on user choice
 
             //List<Hero> EsIsStrongAgainst = db.GetStrongAgainst(1); // 1 means hero index. It depends on user choice
@@ -135,6 +134,11 @@ namespace Dota2Picker
                 HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
                 HamburgerButton.Background = new SolidColorBrush(Windows.UI.Colors.Transparent);  
             }
+
+        }
+
+        private void GridView_ItemClick(object sender, ItemClickEventArgs e)
+        {
 
         }
 
