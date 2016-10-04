@@ -1,1 +1,1 @@
-C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\Dota2Picker.csproj;x86
+C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Dota2Picker.csproj;x86
