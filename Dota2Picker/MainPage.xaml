@@ -81,6 +81,10 @@
                 Grid.Column="0"
                 Click="HamburgerButton_Click" />
 
+        <TextBox Name="txtSize"
+                 Grid.Column="5"
+                 Grid.Row="1"/>
+
         <SplitView Name="MySplitView" 
                    Grid.Row="1"
                    Grid.ColumnSpan="5"

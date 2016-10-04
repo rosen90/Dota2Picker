@@ -8,10 +8,13 @@ namespace Dota2Picker.Models
 {
     class Hero
     {
-        public int hero_id { get; set; }
-        public string hero_name { get; set; }
-        public string hero_attack { get; set; }
-        public string hero_attribute { get; set; }
+        public int id { get; set; }
+        public string name { get; set; }
+        public int attack_id { get; set; }
+        public int attribute_id { get; set; }
+        public int role_id { get; set; }
+        public string type_name { get; set; }
+        public string attribute_name { get; set; }
 
     }
 }

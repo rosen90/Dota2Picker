@@ -6,7 +6,9 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.ViewManagement;
 using Dota2Picker.Objects;
+using Dota2Picker.Models;
 using Windows.UI.Text;
+using System.Collections.Generic;
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -17,22 +19,23 @@ namespace Dota2Picker
     {
         private DataBaseConnector db = new DataBaseConnector();
 
+        List<Hero> AllHeroesList = new List<Hero>();
         int x1, x2;
         bool ShowHideSearchBox = false;
         public MainPage()
         {
             this.InitializeComponent();
             InitializeUi();
-
+            
             MainGrid.ManipulationMode = ManipulationModes.TranslateRailsX;
-
-            CheckDataBase();
+            
+            //CheckDataBase();
             CheckDeviceOrientation();
             Window.Current.SizeChanged += CheckDeviceOrientation;
 
             /*--------------------- Only For Debug -------------------*/
-            //List<Hero> AllHeroes = db.getAllHeroes();
-
+            AllHeroesList = db.getAllHeroes();
+            txtSize.Text = AllHeroesList.Count.ToString();
             //List<Hero> EsIsWeakAgainst = db.GetWeakAgainst(1); // 1 means hero index. It depends on user choice
 
             //List<Hero> EsIsStrongAgainst = db.GetStrongAgainst(1); // 1 means hero index. It depends on user choice
@@ -115,7 +118,6 @@ namespace Dota2Picker
             {
                 SearchBox.Visibility = Visibility.Collapsed;
             }
-
         }
         
         private void CheckDeviceOrientation(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
@@ -162,10 +164,6 @@ namespace Dota2Picker
                 InfoMsg.Margin = margin;
             }
         }
-
-        private async void CheckDataBase()
-        {
-            await db.CopyDatabase();
-        }
+        
     }
 }
