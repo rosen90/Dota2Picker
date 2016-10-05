@@ -57,21 +57,26 @@
                 Background="Transparent" 
                 Click="Button_Click" Style="{StaticResource ButtonStyle1}">
         </Button>
+        
         <Grid x:Name="gridHeroes"
               Grid.Row="1"
               Grid.ColumnSpan="10"
               ScrollViewer.VerticalScrollMode="Auto">
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
+            
             <GridView ItemsSource="{x:Bind AllHeroesList}"
                       IsItemClickEnabled="True"
-                      ItemClick="GridView_ItemClick">
+                      ItemClick="GridView_ItemClick"
+                      Grid.Row="1"
+                      Grid.Column="1">
                 <GridView.ItemTemplate>
                     <DataTemplate x:DataType="localModels:Hero">
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Image Width="150" Height="100" Source="{x:Bind imgPath}" HorizontalAlignment="Center"></Image>
-                            <TextBlock FontSize="18" Text="{x:Bind name}" HorizontalAlignment="Right"></TextBlock>
+                            <Image Width="75" Height="50" Source="{x:Bind imgPath}" HorizontalAlignment="Center"></Image>
+                            <!--<TextBlock FontSize="18" Text="{x:Bind name}" HorizontalAlignment="Center"></TextBlock>-->
                             </StackPanel>
                     </DataTemplate>
                 </GridView.ItemTemplate>
