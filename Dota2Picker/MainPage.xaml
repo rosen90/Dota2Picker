@@ -89,10 +89,10 @@
                 
                 <GridView.ItemTemplate>
                     <DataTemplate x:DataType="localModels:Hero">
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Image Width="75" Height="50" Source="{x:Bind imgPath}" HorizontalAlignment="Center"></Image>
-                            <!--<TextBlock FontSize="18" Text="{x:Bind name}" HorizontalAlignment="Center"></TextBlock>-->
-                        </StackPanel>
+                        <Grid ToolTipService.ToolTip="{x:Bind name}" ToolTipService.Placement="Bottom" HorizontalAlignment="Center" Width="80" Height="57">
+                            <Image Width="75" Height="50" Source="{x:Bind imgPath}" HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
+                            <TextBlock FontSize="14" Text="{x:Bind name}" HorizontalAlignment="Center" VerticalAlignment="Bottom"></TextBlock>
+                        </Grid>
                     </DataTemplate>
                 </GridView.ItemTemplate>
             </GridView>
