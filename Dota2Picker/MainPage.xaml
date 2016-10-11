@@ -38,7 +38,7 @@
 
         <!-- Main SearchBox -->
         <TextBox x:Name="SearchBox" 
-                 Foreground="White"
+                 Foreground="Bisque"
                  Visibility="Collapsed" 
                  Grid.Row="0"
                  Grid.Column="1"
@@ -86,13 +86,14 @@
                       ItemsSource="{x:Bind AllHeroesList}"
                       IsItemClickEnabled="True"
                       ItemClick="GridView_ItemClick"
+                      SelectionMode="Single"
                       ScrollViewer.VerticalScrollBarVisibility="Hidden">
                 
                 <GridView.ItemTemplate>
                     <DataTemplate x:DataType="localModels:Hero">
                         <Grid ToolTipService.ToolTip="{x:Bind name}" ToolTipService.Placement="Top" HorizontalAlignment="Center" Width="102" Height="75">
                             <Image Width="100" Height="70" Source="{x:Bind imgPath}" HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
-                            <TextBlock FontSize="14" Text="{x:Bind name}" MaxWidth="102" HorizontalAlignment="Center" VerticalAlignment="Bottom"></TextBlock>
+                            <TextBlock FontSize="14" Foreground="Bisque" Text="{x:Bind name}" MaxWidth="102" HorizontalAlignment="Center" VerticalAlignment="Bottom"></TextBlock>
                         </Grid>
                     </DataTemplate>
                 </GridView.ItemTemplate>

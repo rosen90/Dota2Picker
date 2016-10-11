@@ -7,10 +7,9 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.ViewManagement;
 using Dota2Picker.Objects;
 using Dota2Picker.Models;
-using Windows.UI.Text;
 using System.Collections.Generic;
-using System.Linq;
 using Windows.UI.Xaml.Navigation;
+
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -25,6 +24,8 @@ namespace Dota2Picker
         List<Hero> HeroesByStrengthList = new List<Hero>();
         List<Hero> HeroesByAgilityList = new List<Hero>();
         List<Hero> HeroesByIntelligenceList = new List<Hero>();
+
+        private static Hero selectedHero;
 
         int x1, x2;
         bool ShowHideSearchBox = false;
@@ -49,6 +50,8 @@ namespace Dota2Picker
             /* ------------------------------------------------------ */
 
         }
+
+
 
         /*--------------------- Load data from database -------------------*/
         private void LoadDbDataHeroes()
@@ -167,7 +170,9 @@ namespace Dota2Picker
 
         private void GridView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            
+            selectedHero = (Hero)e.ClickedItem;
+
+            this.Frame.Navigate(typeof(HeroPage), selectedHero);
         }
 
         private void IconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
