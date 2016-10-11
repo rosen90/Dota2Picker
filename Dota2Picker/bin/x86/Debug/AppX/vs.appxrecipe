@@ -10,13 +10,13 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>2313fc0f-9253-430a-850b-ff7afe20e606</PackageIdentityName>
     <PackageIdentityPublisher>CN=karad</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\Projects\Dota2Picker\Dota2Picker\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>A55A0F2CD94F20B7A3E2B43FDB98566AAB51DE2D517F16E706897E6268BD6AC2</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>5A8D9D4319802051FE16FF90D4159FDA19ADC63E8A39DDA99A510622BCCF5222</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>2313fc0f-9253-430a-850b-ff7afe20e606_1.0.0.0_x86__68bcnaekmtyep</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>2313fc0f-9253-430a-850b-ff7afe20e606_68bcnaekmtyep!App</RegisteredUserModeAppID>
     <RegisteredPackageID>2313fc0f-9253-430a-850b-ff7afe20e606</RegisteredPackageID>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-10-04T14:00:55.953</Modified>
+      <Modified>2016-10-11T20:39:28.376</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.exe">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.exe">
       <PackagePath>entrypoint\Dota2Picker.exe</PackagePath>
-      <Modified>2016-10-04T14:00:54.619</Modified>
+      <Modified>2016-10-11T20:39:27.359</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\karad\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -476,580 +476,581 @@
       <PackagePath>SQLitePCL.Ext.dll</PackagePath>
       <Modified>2014-12-09T09:04:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-100.jpg">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-100.jpg">
       <PackagePath>Assets\SplashScreen.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T11:55:42.108</Modified>
+      <Modified>2016-10-05T09:02:46.617</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-125.jpg">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-125.jpg">
       <PackagePath>Assets\SplashScreen.scale-125.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T11:55:02.205</Modified>
+      <Modified>2016-10-05T09:02:46.623</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-150.jpg">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-150.jpg">
       <PackagePath>Assets\SplashScreen.scale-150.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T11:54:24.212</Modified>
+      <Modified>2016-10-05T09:02:46.627</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-200.jpg">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-200.jpg">
       <PackagePath>Assets\SplashScreen.scale-200.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T11:53:37.502</Modified>
+      <Modified>2016-10-05T09:02:46.632</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-400.jpg">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-400.jpg">
       <PackagePath>Assets\SplashScreen.scale-400.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T11:52:21.826</Modified>
+      <Modified>2016-10-05T09:02:46.637</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square150x150Logo.scale-200.jpg">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\Square150x150Logo.scale-200.jpg">
       <PackagePath>Assets\Square150x150Logo.scale-200.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T13:04:02.431</Modified>
+      <Modified>2016-10-05T09:02:46.645</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square310x310Logo.scale-200.jpg">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\Square310x310Logo.scale-200.jpg">
       <PackagePath>Assets\Square310x310Logo.scale-200.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T13:05:20.588</Modified>
+      <Modified>2016-10-05T09:02:46.653</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square44x44Logo.scale-400.jpg">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\Square44x44Logo.scale-400.jpg">
       <PackagePath>Assets\Square44x44Logo.scale-400.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T13:02:45.265</Modified>
+      <Modified>2016-10-05T09:02:46.657</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square71x71Logo.scale-400.jpg">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\Square71x71Logo.scale-400.jpg">
       <PackagePath>Assets\Square71x71Logo.scale-400.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T13:03:30.520</Modified>
+      <Modified>2016-10-05T09:02:46.663</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\StoreLogo.scale-400.jpg">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\StoreLogo.scale-400.jpg">
       <PackagePath>Assets\StoreLogo.scale-400.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T13:03:09.015</Modified>
+      <Modified>2016-10-05T09:02:46.670</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Wide310x150Logo.scale-200.jpg">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\Wide310x150Logo.scale-200.jpg">
       <PackagePath>Assets\Wide310x150Logo.scale-200.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T13:04:51.729</Modified>
+      <Modified>2016-10-05T09:02:46.675</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
-      <Modified>2016-09-29T11:39:10.718</Modified>
+      <Modified>2016-10-05T09:02:46.641</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square71x71Logo.scale-400.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\Square71x71Logo.scale-400.png">
       <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
-      <Modified>2016-09-29T12:50:01.362</Modified>
+      <Modified>2016-10-05T09:02:46.665</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\agility.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\agility.png">
       <PackagePath>Resources\agility.png</PackagePath>
-      <Modified>2016-09-29T10:38:57.095</Modified>
+      <Modified>2016-10-05T09:02:46.940</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\1.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\1.png">
       <PackagePath>Resources\Images\1.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.086</Modified>
+      <Modified>2016-10-05T09:02:46.765</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\10.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\10.png">
       <PackagePath>Resources\Images\10.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.149</Modified>
+      <Modified>2016-10-05T09:02:46.766</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\100.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\100.png">
       <PackagePath>Resources\Images\100.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.974</Modified>
+      <Modified>2016-10-05T09:02:46.768</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\101.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\101.png">
       <PackagePath>Resources\Images\101.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.978</Modified>
+      <Modified>2016-10-05T09:02:46.770</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\102.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\102.png">
       <PackagePath>Resources\Images\102.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.984</Modified>
+      <Modified>2016-10-05T09:02:46.772</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\103.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\103.png">
       <PackagePath>Resources\Images\103.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.989</Modified>
+      <Modified>2016-10-05T09:02:46.774</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\104.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\104.png">
       <PackagePath>Resources\Images\104.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.993</Modified>
+      <Modified>2016-10-05T09:02:46.775</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\105.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\105.png">
       <PackagePath>Resources\Images\105.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.026</Modified>
+      <Modified>2016-10-05T09:02:46.777</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\106.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\106.png">
       <PackagePath>Resources\Images\106.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.034</Modified>
+      <Modified>2016-10-05T09:02:46.779</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\107.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\107.png">
       <PackagePath>Resources\Images\107.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.040</Modified>
+      <Modified>2016-10-05T09:02:46.781</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\108.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\108.png">
       <PackagePath>Resources\Images\108.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.047</Modified>
+      <Modified>2016-10-05T09:02:46.782</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\109.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\109.png">
       <PackagePath>Resources\Images\109.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.054</Modified>
+      <Modified>2016-10-05T09:02:46.783</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\11.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\11.png">
       <PackagePath>Resources\Images\11.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.157</Modified>
+      <Modified>2016-10-05T09:02:46.785</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\110.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\110.png">
       <PackagePath>Resources\Images\110.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.061</Modified>
+      <Modified>2016-10-05T09:02:46.786</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\111.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\111.png">
       <PackagePath>Resources\Images\111.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.069</Modified>
+      <Modified>2016-10-05T09:02:46.787</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\112.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\112.png">
       <PackagePath>Resources\Images\112.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.079</Modified>
+      <Modified>2016-10-05T09:02:46.789</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\12.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\12.png">
       <PackagePath>Resources\Images\12.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.164</Modified>
+      <Modified>2016-10-05T09:02:46.790</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\13.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\13.png">
       <PackagePath>Resources\Images\13.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.171</Modified>
+      <Modified>2016-10-05T09:02:46.791</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\14.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\14.png">
       <PackagePath>Resources\Images\14.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.178</Modified>
+      <Modified>2016-10-05T09:02:46.793</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\15.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\15.png">
       <PackagePath>Resources\Images\15.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.186</Modified>
+      <Modified>2016-10-05T09:02:46.795</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\16.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\16.png">
       <PackagePath>Resources\Images\16.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.522</Modified>
+      <Modified>2016-10-05T09:02:46.796</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\17.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\17.png">
       <PackagePath>Resources\Images\17.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.527</Modified>
+      <Modified>2016-10-05T09:02:46.798</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\18.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\18.png">
       <PackagePath>Resources\Images\18.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.531</Modified>
+      <Modified>2016-10-05T09:02:46.799</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\19.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\19.png">
       <PackagePath>Resources\Images\19.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.536</Modified>
+      <Modified>2016-10-05T09:02:46.801</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\2.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\2.png">
       <PackagePath>Resources\Images\2.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.096</Modified>
+      <Modified>2016-10-05T09:02:46.802</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\20.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\20.png">
       <PackagePath>Resources\Images\20.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.542</Modified>
+      <Modified>2016-10-05T09:02:46.803</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\21.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\21.png">
       <PackagePath>Resources\Images\21.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.547</Modified>
+      <Modified>2016-10-05T09:02:46.805</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\22.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\22.png">
       <PackagePath>Resources\Images\22.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.559</Modified>
+      <Modified>2016-10-05T09:02:46.806</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\23.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\23.png">
       <PackagePath>Resources\Images\23.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.564</Modified>
+      <Modified>2016-10-05T09:02:46.808</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\24.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\24.png">
       <PackagePath>Resources\Images\24.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.570</Modified>
+      <Modified>2016-10-05T09:02:46.809</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\25.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\25.png">
       <PackagePath>Resources\Images\25.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.584</Modified>
+      <Modified>2016-10-05T09:02:46.810</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\26.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\26.png">
       <PackagePath>Resources\Images\26.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.590</Modified>
+      <Modified>2016-10-05T09:02:46.812</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\27.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\27.png">
       <PackagePath>Resources\Images\27.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.597</Modified>
+      <Modified>2016-10-05T09:02:46.813</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\28.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\28.png">
       <PackagePath>Resources\Images\28.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.602</Modified>
+      <Modified>2016-10-05T09:02:46.814</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\29.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\29.png">
       <PackagePath>Resources\Images\29.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.607</Modified>
+      <Modified>2016-10-05T09:02:46.815</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\3.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\3.png">
       <PackagePath>Resources\Images\3.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.103</Modified>
+      <Modified>2016-10-05T09:02:46.816</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\30.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\30.png">
       <PackagePath>Resources\Images\30.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.614</Modified>
+      <Modified>2016-10-05T09:02:46.818</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\31.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\31.png">
       <PackagePath>Resources\Images\31.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.619</Modified>
+      <Modified>2016-10-05T09:02:46.820</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\32.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\32.png">
       <PackagePath>Resources\Images\32.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.626</Modified>
+      <Modified>2016-10-05T09:02:46.821</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\33.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\33.png">
       <PackagePath>Resources\Images\33.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.632</Modified>
+      <Modified>2016-10-05T09:02:46.823</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\34.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\34.png">
       <PackagePath>Resources\Images\34.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.638</Modified>
+      <Modified>2016-10-05T09:02:46.824</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\35.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\35.png">
       <PackagePath>Resources\Images\35.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.644</Modified>
+      <Modified>2016-10-05T09:02:46.826</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\36.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\36.png">
       <PackagePath>Resources\Images\36.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.650</Modified>
+      <Modified>2016-10-05T09:02:46.827</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\37.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\37.png">
       <PackagePath>Resources\Images\37.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.655</Modified>
+      <Modified>2016-10-05T09:02:46.829</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\38.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\38.png">
       <PackagePath>Resources\Images\38.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.661</Modified>
+      <Modified>2016-10-05T09:02:46.831</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\39.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\39.png">
       <PackagePath>Resources\Images\39.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.667</Modified>
+      <Modified>2016-10-05T09:02:46.832</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\4.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\4.png">
       <PackagePath>Resources\Images\4.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.110</Modified>
+      <Modified>2016-10-05T09:02:46.834</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\40.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\40.png">
       <PackagePath>Resources\Images\40.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.671</Modified>
+      <Modified>2016-10-05T09:02:46.835</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\41.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\41.png">
       <PackagePath>Resources\Images\41.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.677</Modified>
+      <Modified>2016-10-05T09:02:46.836</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\42.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\42.png">
       <PackagePath>Resources\Images\42.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.682</Modified>
+      <Modified>2016-10-05T09:02:46.839</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\43.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\43.png">
       <PackagePath>Resources\Images\43.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.688</Modified>
+      <Modified>2016-10-05T09:02:46.840</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\44.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\44.png">
       <PackagePath>Resources\Images\44.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.694</Modified>
+      <Modified>2016-10-05T09:02:46.842</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\45.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\45.png">
       <PackagePath>Resources\Images\45.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.699</Modified>
+      <Modified>2016-10-05T09:02:46.844</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\46.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\46.png">
       <PackagePath>Resources\Images\46.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.710</Modified>
+      <Modified>2016-10-05T09:02:46.845</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\47.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\47.png">
       <PackagePath>Resources\Images\47.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.715</Modified>
+      <Modified>2016-10-05T09:02:46.846</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\48.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\48.png">
       <PackagePath>Resources\Images\48.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.720</Modified>
+      <Modified>2016-10-05T09:02:46.848</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\49.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\49.png">
       <PackagePath>Resources\Images\49.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.725</Modified>
+      <Modified>2016-10-05T09:02:46.849</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\5.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\5.png">
       <PackagePath>Resources\Images\5.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.116</Modified>
+      <Modified>2016-10-05T09:02:46.850</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\50.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\50.png">
       <PackagePath>Resources\Images\50.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.732</Modified>
+      <Modified>2016-10-05T09:02:46.851</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\51.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\51.png">
       <PackagePath>Resources\Images\51.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.737</Modified>
+      <Modified>2016-10-05T09:02:46.853</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\52.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\52.png">
       <PackagePath>Resources\Images\52.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.742</Modified>
+      <Modified>2016-10-05T09:02:46.854</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\53.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\53.png">
       <PackagePath>Resources\Images\53.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.747</Modified>
+      <Modified>2016-10-05T09:02:46.856</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\54.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\54.png">
       <PackagePath>Resources\Images\54.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.752</Modified>
+      <Modified>2016-10-05T09:02:46.857</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\55.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\55.png">
       <PackagePath>Resources\Images\55.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.756</Modified>
+      <Modified>2016-10-05T09:02:46.859</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\56.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\56.png">
       <PackagePath>Resources\Images\56.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.761</Modified>
+      <Modified>2016-10-05T09:02:46.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\57.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\57.png">
       <PackagePath>Resources\Images\57.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.766</Modified>
+      <Modified>2016-10-05T09:02:46.862</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\58.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\58.png">
       <PackagePath>Resources\Images\58.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.771</Modified>
+      <Modified>2016-10-05T09:02:46.863</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\59.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\59.png">
       <PackagePath>Resources\Images\59.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.776</Modified>
+      <Modified>2016-10-05T09:02:46.864</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\6.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\6.png">
       <PackagePath>Resources\Images\6.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.122</Modified>
+      <Modified>2016-10-05T09:02:46.866</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\60.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\60.png">
       <PackagePath>Resources\Images\60.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.781</Modified>
+      <Modified>2016-10-05T09:02:46.867</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\61.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\61.png">
       <PackagePath>Resources\Images\61.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.786</Modified>
+      <Modified>2016-10-05T09:02:46.868</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\62.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\62.png">
       <PackagePath>Resources\Images\62.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.791</Modified>
+      <Modified>2016-10-05T09:02:46.870</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\63.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\63.png">
       <PackagePath>Resources\Images\63.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.796</Modified>
+      <Modified>2016-10-05T09:02:46.872</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\64.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\64.png">
       <PackagePath>Resources\Images\64.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.800</Modified>
+      <Modified>2016-10-05T09:02:46.873</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\65.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\65.png">
       <PackagePath>Resources\Images\65.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.805</Modified>
+      <Modified>2016-10-05T09:02:46.875</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\66.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\66.png">
       <PackagePath>Resources\Images\66.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.810</Modified>
+      <Modified>2016-10-05T09:02:46.877</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\67.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\67.png">
       <PackagePath>Resources\Images\67.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.815</Modified>
+      <Modified>2016-10-05T09:02:46.880</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\68.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\68.png">
       <PackagePath>Resources\Images\68.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.820</Modified>
+      <Modified>2016-10-05T09:02:46.881</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\69.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\69.png">
       <PackagePath>Resources\Images\69.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.825</Modified>
+      <Modified>2016-10-05T09:02:46.884</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\7.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\7.png">
       <PackagePath>Resources\Images\7.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.129</Modified>
+      <Modified>2016-10-05T09:02:46.886</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\70.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\70.png">
       <PackagePath>Resources\Images\70.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.830</Modified>
+      <Modified>2016-10-05T09:02:46.887</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\71.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\71.png">
       <PackagePath>Resources\Images\71.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.834</Modified>
+      <Modified>2016-10-05T09:02:46.889</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\72.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\72.png">
       <PackagePath>Resources\Images\72.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.839</Modified>
+      <Modified>2016-10-05T09:02:46.891</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\73.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\73.png">
       <PackagePath>Resources\Images\73.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.843</Modified>
+      <Modified>2016-10-05T09:02:46.893</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\74.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\74.png">
       <PackagePath>Resources\Images\74.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.848</Modified>
+      <Modified>2016-10-05T09:02:46.894</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\75.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\75.png">
       <PackagePath>Resources\Images\75.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.852</Modified>
+      <Modified>2016-10-05T09:02:46.895</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\76.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\76.png">
       <PackagePath>Resources\Images\76.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.857</Modified>
+      <Modified>2016-10-05T09:02:46.897</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\77.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\77.png">
       <PackagePath>Resources\Images\77.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.861</Modified>
+      <Modified>2016-10-05T09:02:46.898</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\78.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\78.png">
       <PackagePath>Resources\Images\78.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.866</Modified>
+      <Modified>2016-10-05T09:02:46.900</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\79.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\79.png">
       <PackagePath>Resources\Images\79.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.871</Modified>
+      <Modified>2016-10-05T09:02:46.901</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\8.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\8.png">
       <PackagePath>Resources\Images\8.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.135</Modified>
+      <Modified>2016-10-05T09:02:46.903</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\80.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\80.png">
       <PackagePath>Resources\Images\80.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.876</Modified>
+      <Modified>2016-10-05T09:02:46.904</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\81.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\81.png">
       <PackagePath>Resources\Images\81.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.882</Modified>
+      <Modified>2016-10-05T09:02:46.906</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\82.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\82.png">
       <PackagePath>Resources\Images\82.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.887</Modified>
+      <Modified>2016-10-05T09:02:46.907</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\83.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\83.png">
       <PackagePath>Resources\Images\83.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.891</Modified>
+      <Modified>2016-10-05T09:02:46.909</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\84.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\84.png">
       <PackagePath>Resources\Images\84.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.896</Modified>
+      <Modified>2016-10-05T09:02:46.910</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\85.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\85.png">
       <PackagePath>Resources\Images\85.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.901</Modified>
+      <Modified>2016-10-05T09:02:46.912</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\86.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\86.png">
       <PackagePath>Resources\Images\86.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.906</Modified>
+      <Modified>2016-10-05T09:02:46.913</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\87.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\87.png">
       <PackagePath>Resources\Images\87.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.910</Modified>
+      <Modified>2016-10-05T09:02:46.914</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\88.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\88.png">
       <PackagePath>Resources\Images\88.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.915</Modified>
+      <Modified>2016-10-05T09:02:46.916</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\89.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\89.png">
       <PackagePath>Resources\Images\89.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.920</Modified>
+      <Modified>2016-10-05T09:02:46.917</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\9.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\9.png">
       <PackagePath>Resources\Images\9.png</PackagePath>
-      <Modified>2016-09-27T13:09:06.142</Modified>
+      <Modified>2016-10-05T09:02:46.919</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\90.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\90.png">
       <PackagePath>Resources\Images\90.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.925</Modified>
+      <Modified>2016-10-05T09:02:46.921</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\91.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\91.png">
       <PackagePath>Resources\Images\91.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.930</Modified>
+      <Modified>2016-10-05T09:02:46.923</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\92.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\92.png">
       <PackagePath>Resources\Images\92.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.934</Modified>
+      <Modified>2016-10-05T09:02:46.925</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\93.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\93.png">
       <PackagePath>Resources\Images\93.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.939</Modified>
+      <Modified>2016-10-05T09:02:46.926</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\94.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\94.png">
       <PackagePath>Resources\Images\94.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.943</Modified>
+      <Modified>2016-10-05T09:02:46.928</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\95.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\95.png">
       <PackagePath>Resources\Images\95.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.948</Modified>
+      <Modified>2016-10-05T09:02:46.930</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\96.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\96.png">
       <PackagePath>Resources\Images\96.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.954</Modified>
+      <Modified>2016-10-05T09:02:46.932</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\97.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\97.png">
       <PackagePath>Resources\Images\97.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.959</Modified>
+      <Modified>2016-10-05T09:02:46.934</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\98.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\98.png">
       <PackagePath>Resources\Images\98.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.964</Modified>
+      <Modified>2016-10-05T09:02:46.937</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\Images\99.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\99.png">
       <PackagePath>Resources\Images\99.png</PackagePath>
-      <Modified>2016-09-27T13:09:05.969</Modified>
+      <Modified>2016-10-05T09:02:46.939</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\intelligence.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\intelligence.png">
       <PackagePath>Resources\intelligence.png</PackagePath>
-      <Modified>2016-09-29T10:38:56.567</Modified>
+      <Modified>2016-10-05T09:02:46.941</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Resources\strength.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\strength.png">
       <PackagePath>Resources\strength.png</PackagePath>
-      <Modified>2016-09-29T10:38:56.590</Modified>
+      <Modified>2016-10-05T09:02:46.942</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2015-09-20T14:30:08.000</Modified>
+      <Modified>2016-10-05T09:02:46.613</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <Modified>2015-09-20T14:30:08.000</Modified>
+      <Modified>2016-10-05T09:02:46.633</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <Modified>2016-09-29T12:53:20.331</Modified>
+      <Modified>2016-10-05T09:02:46.647</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <Modified>2015-09-20T14:30:08.000</Modified>
+      <Modified>2016-10-05T09:02:46.654</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <Modified>2015-09-20T14:30:08.000</Modified>
+      <Modified>2016-10-05T09:02:46.658</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <Modified>2015-09-20T14:30:08.000</Modified>
+      <Modified>2016-10-05T09:02:46.666</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <Modified>2015-09-20T14:30:08.000</Modified>
+      <Modified>2016-10-05T09:02:46.676</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\HeroData.db">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\HeroData.db">
       <PackagePath>HeroData.db</PackagePath>
-      <Modified>2016-10-01T09:20:44.276</Modified>
+      <Modified>2016-10-05T09:02:46.707</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-09-16T09:24:10.347</Modified>
+      <Modified>2016-10-05T09:02:46.764</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.xr.xml">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.xr.xml">
       <PackagePath>Dota2Picker.xr.xml</PackagePath>
-      <Modified>2016-10-04T13:49:04.573</Modified>
+      <Modified>2016-10-11T13:05:27.271</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-09-15T06:24:45.349</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-10-04T14:00:55.444</Modified>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-10-11T13:47:53.659</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\karad\OneDrive\Documents\Visual Studio 2015\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\Dota2Picker.exe">
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\Dota2Picker.exe">
       <PackagePath>Dota2Picker.exe</PackagePath>
-      <Modified>2016-10-04T14:00:55.945</Modified>
+      <Modified>2016-10-11T20:39:28.361</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

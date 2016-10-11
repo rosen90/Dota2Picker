@@ -1,1 +1,1 @@
-C:\Users\karad\onedrive\documents\visual studio 2015\Projects\Dota2Picker\Dota2Picker\Dota2Picker.csproj;arm
+E:\Projects\Dota2Picker\Dota2Picker\Dota2Picker.csproj;arm

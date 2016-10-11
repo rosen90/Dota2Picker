@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    xmlns:localModels="using:Dota2Picker.Models"
                                                        
 	                                                       >
 
@@ -13,7 +14,7 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
@@ -37,7 +38,7 @@
 
         <!-- Main SearchBox -->
         <TextBox x:ConnectionId='3' x:Name="SearchBox" 
-                 Foreground="White"
+                 Foreground="Bisque"
                  Visibility="Collapsed" 
                  Grid.Row="0"
                  Grid.Column="1"
@@ -62,17 +63,45 @@
         <TextBlock x:ConnectionId='5' Name="InfoMsg"
                    Grid.Row="1" 
                    Grid.Column="0" 
+                   Grid.ColumnSpan="10"
+                   HorizontalAlignment="Center"
                    TextWrapping="WrapWholeWords" 
-                   Grid.RowSpan="1" 
-                   Grid.ColumnSpan="10" 
                    FontFamily="Georgia"
                    FontSize="24"
                    Foreground="Bisque"
                    Text="Select a hero to counter it..." 
                   />
 
+        <Grid x:ConnectionId='6' x:Name="gridHeroes"
+              Grid.Row="2"
+              Grid.ColumnSpan="10"
+              HorizontalAlignment="Center"
+              ScrollViewer.VerticalScrollBarVisibility="Hidden">
+
+            <!--<Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>-->
+
+            <GridView x:ConnectionId='15' x:Name="gridViewHeroes"
+                                                          
+                      IsItemClickEnabled="True"
+                                                    
+                      SelectionMode="Single"
+                      ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                
+                <GridView.ItemTemplate>
+                    <DataTemplate                              >
+                        <Grid x:ConnectionId='16'                                        ToolTipService.Placement="Top" HorizontalAlignment="Center" Width="102" Height="75">
+                            <Image x:ConnectionId='17' Width="100" Height="70"                           HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
+                            <TextBlock x:ConnectionId='18' FontSize="14" Foreground="Bisque"                      MaxWidth="102" HorizontalAlignment="Center" VerticalAlignment="Bottom"></TextBlock>
+                        </Grid>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </Grid>
+
         <!--Hamburger Menu -->
-        <Button x:ConnectionId='6' Name ="HamburgerButton" 
+        <Button x:ConnectionId='7' Name ="HamburgerButton" 
                 FontFamily="Segoe MDL2 Assets" 
                 Content="&#xE700;" 
                 FontSize="36"
@@ -81,7 +110,7 @@
                 Grid.Column="0"
                                               />
 
-        <SplitView x:ConnectionId='7' Name="MySplitView" 
+        <SplitView x:ConnectionId='8' Name="MySplitView" 
                    Grid.Row="1"
                    Grid.ColumnSpan="5"
                    DisplayMode="CompactOverlay"
@@ -92,7 +121,7 @@
                    ManipulationMode="TranslateX">
 
             <SplitView.Pane>
-                <Grid x:ConnectionId='8' x:Name="GridPane">
+                <Grid x:ConnectionId='9' x:Name="GridPane">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
@@ -104,11 +133,12 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <ListBox x:ConnectionId='9' SelectionMode="Single"
+                    <ListBox x:ConnectionId='10' SelectionMode="Single"
                          Name="IconsListBox" 
                          Grid.Row="0"
                          Grid.RowSpan="4"
-                         Background="#2b2b2b">
+                         Background="#2b2b2b"
+                                                                         >
 
                     <!--First Item of the list -->
                     <ListBoxItem >
@@ -120,7 +150,7 @@
                                        VerticalAlignment="Center"
                                        Text="&#xE8A9;" />
                             <!--Text-->
-                            <TextBlock x:ConnectionId='13' Name="AllHeroes"
+                            <TextBlock x:ConnectionId='14' Name="AllHeroes"
                                        Text="All Heroes" 
                                        FontSize="18" 
                                        VerticalAlignment="Bottom"
@@ -196,15 +226,15 @@
                     </ListBoxItem>
 
                 </ListBox>
-                    <ListBox x:ConnectionId='10' SelectionMode="Single"
+                    <ListBox x:ConnectionId='11' SelectionMode="Single"
                          Name="SettingsListBox" 
                          Grid.Row="4"
                          Background="#2b2b2b"
                          BorderThickness="0,2,0,0"
                          BorderBrush="White"
-                         ScrollViewer.VerticalScrollMode="Disabled">
+                         ScrollViewer.VerticalScrollMode="Auto">
 
-                        <ListBoxItem x:ConnectionId='11' x:Name="Tutorial" VerticalAlignment="Bottom" Style="{StaticResource SettingsStyle}">
+                        <ListBoxItem x:ConnectionId='12' x:Name="Tutorial" VerticalAlignment="Bottom" Style="{StaticResource SettingsStyle}">
                             <StackPanel Orientation="Horizontal">
                                 <!--Symbol-->
                                 <TextBlock FontFamily="Segoe MDL2 Assets" 
@@ -223,7 +253,7 @@
                             </StackPanel>
                         </ListBoxItem>
 
-                        <ListBoxItem x:ConnectionId='12' x:Name="Settings" VerticalAlignment="Bottom" Style="{StaticResource SettingsStyle}">
+                        <ListBoxItem x:ConnectionId='13' x:Name="Settings" VerticalAlignment="Bottom" Style="{StaticResource SettingsStyle}">
                             <StackPanel Orientation="Horizontal">
                                 <!--Symbol-->
                                 <TextBlock FontFamily="Segoe MDL2 Assets" 

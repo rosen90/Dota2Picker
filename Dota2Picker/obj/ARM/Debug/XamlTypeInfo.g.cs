@@ -132,15 +132,19 @@ namespace Dota2Picker.Dota2Picker_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "Dota2Picker.MainPage";
+            _typeNameTable = new string[5];
+            _typeNameTable[0] = "Dota2Picker.HeroPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "Dota2Picker.MainPage";
+            _typeNameTable[4] = "Dota2Picker.SettingsPage";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::Dota2Picker.MainPage);
+            _typeTable = new global::System.Type[5];
+            _typeTable[0] = typeof(global::Dota2Picker.HeroPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::Dota2Picker.MainPage);
+            _typeTable[4] = typeof(global::Dota2Picker.SettingsPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +179,9 @@ namespace Dota2Picker.Dota2Picker_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::Dota2Picker.MainPage(); }
+        private object Activate_0_HeroPage() { return new global::Dota2Picker.HeroPage(); }
+        private object Activate_3_MainPage() { return new global::Dota2Picker.MainPage(); }
+        private object Activate_4_SettingsPage() { return new global::Dota2Picker.SettingsPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,9 +193,9 @@ namespace Dota2Picker.Dota2Picker_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Dota2Picker.MainPage
+            case 0:   //  Dota2Picker.HeroPage
                 userType = new global::Dota2Picker.Dota2Picker_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_HeroPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -200,6 +206,20 @@ namespace Dota2Picker.Dota2Picker_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::Dota2Picker.Dota2Picker_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  Dota2Picker.MainPage
+                userType = new global::Dota2Picker.Dota2Picker_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Dota2Picker.SettingsPage
+                userType = new global::Dota2Picker.Dota2Picker_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_SettingsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;
