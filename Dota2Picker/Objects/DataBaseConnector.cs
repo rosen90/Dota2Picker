@@ -39,11 +39,11 @@ namespace Dota2Picker.Objects
              getAllHeroes();
         }
         
-        public void LoadHeroesByAttribute()
+        public async void LoadHeroesByAttribute()
         {
-            getHeroesByAgility();
-            getHeroesByIntelligence();
-            getHeroesByStrength();
+            await Task.Run( () => getHeroesByAgility());
+            await Task.Run( () => getHeroesByIntelligence());
+            await Task.Run( () => getHeroesByStrength());
         }
         
         

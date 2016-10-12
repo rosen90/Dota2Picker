@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Dota2Picker.Objects;
+using System.Diagnostics;
 
 namespace Dota2Picker
 {
@@ -33,7 +34,9 @@ namespace Dota2Picker
 
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
+            Debug.WriteLine("\r\n\r\n\n\n\n\n Start here - " + System.DateTime.Now.ToString());
             DataBaseConnector.dbInstance.LoadAllHeroes();
+            Debug.WriteLine("\r\n\r\n\n\n\n\n after loadAllHeroes - " + System.DateTime.Now.ToString());
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -68,7 +71,9 @@ namespace Dota2Picker
                 // Ensure the current window is active
                 Window.Current.Activate();
             }
+            Debug.WriteLine("\r\n\r\n\n\n\n\n Before second query - " + System.DateTime.Now.ToString());
             DataBaseConnector.dbInstance.LoadHeroesByAttribute();
+            Debug.WriteLine("\r\n\r\n\n\n\n\n end  - " + System.DateTime.Now.ToString());
         }
 
         void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
