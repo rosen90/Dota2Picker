@@ -83,7 +83,6 @@
             </Grid.RowDefinitions>-->
 
             <GridView x:ConnectionId='15' x:Name="gridViewHeroes"
-                                                          
                       IsItemClickEnabled="True"
                                                     
                       SelectionMode="Single"

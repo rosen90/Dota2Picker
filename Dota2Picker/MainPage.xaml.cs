@@ -7,10 +7,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.ViewManagement;
 using Dota2Picker.Objects;
 using Dota2Picker.Models;
-using System.Collections.Generic;
 using Windows.UI.Xaml.Navigation;
-using Windows.UI.Core;
-
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
