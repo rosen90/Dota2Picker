@@ -44,7 +44,8 @@
                  Grid.Column="1"
                  Grid.ColumnSpan="9" 
                  FontSize="24" 
-                 PlaceholderText="Search..." 
+                 PlaceholderText="Search..."
+                 TextChanged="SearchBox_TextChanged"
                  Style="{StaticResource TextBoxStyle1}"/>
         
         <!-- Show Hide SearchBox-->

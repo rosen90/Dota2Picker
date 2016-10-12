@@ -8,6 +8,8 @@ using Windows.UI.ViewManagement;
 using Dota2Picker.Objects;
 using Dota2Picker.Models;
 using Windows.UI.Xaml.Navigation;
+using System.Linq;
+using System.Collections.Generic;
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -18,12 +20,14 @@ namespace Dota2Picker
     {
         private static Hero selectedHero;
 
+        private int _lastIndexForHeroesView;
         int x1, x2;
         bool ShowHideSearchBox = false;
         public MainPage()
         {
             this.InitializeComponent();
             InitializeUi();
+            _lastIndexForHeroesView = 0;
             gridViewHeroes.ItemsSource = DataBaseConnector.AllHeroesList;
 
             MainGrid.ManipulationMode = ManipulationModes.TranslateRailsX;
@@ -156,8 +160,14 @@ namespace Dota2Picker
 
         private void IconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            int index = IconsListBox.SelectedIndex;
-            switch (index)
+            _lastIndexForHeroesView = IconsListBox.SelectedIndex;
+            UpdateGridViewItems(_lastIndexForHeroesView);
+            
+        }
+
+        private void UpdateGridViewItems ( int idx)
+        {
+            switch (idx)
             {
                 case 0:
                     gridViewHeroes.ItemsSource = DataBaseConnector.AllHeroesList;
@@ -177,6 +187,17 @@ namespace Dota2Picker
                     break;
                 default:
                     break;
+            }
+        }
+
+        private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            UpdateGridViewItems(_lastIndexForHeroesView);
+            List<Hero> tempList = ((IEnumerable<Hero>)this.gridViewHeroes.ItemsSource).ToList();
+            if ( SearchBox.Text.Length != 0)
+            {
+                tempList = tempList.FindAll( item => item.name.ToLower().Contains(SearchBox.Text.ToLower()));
+                gridViewHeroes.ItemsSource = tempList;
             }
         }
 
