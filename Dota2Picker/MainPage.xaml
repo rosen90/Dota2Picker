@@ -83,7 +83,6 @@
             </Grid.RowDefinitions>-->
 
             <GridView x:Name="gridViewHeroes"
-                      ItemsSource="{x:Bind AllHeroesList}"
                       IsItemClickEnabled="True"
                       ItemClick="GridView_ItemClick"
                       SelectionMode="Single"

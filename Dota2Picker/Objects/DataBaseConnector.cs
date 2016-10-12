@@ -7,25 +7,49 @@ using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.Storage;
 
-
-
 namespace Dota2Picker.Objects
 {
     class DataBaseConnector
     {
 
         public const string dbName = "HeroData.db";
+        private static DataBaseConnector db = new DataBaseConnector();
+        public static DataBaseConnector dbInstance
+        {
+            get {
+                if ( db == null)
+                {
+                    db = new DataBaseConnector();
+                }
+                return db;
+            }
+        }
+       public static List<Hero> AllHeroesList = new List<Hero>();
+       public static List<Hero> HeroesByStrengthList = new List<Hero>();
+       public static List<Hero> HeroesByAgilityList = new List<Hero>();
+       public static List<Hero> HeroesByIntelligenceList = new List<Hero>();
 
         public DataBaseConnector()
         {
           
         }
 
-        //Get All Heroes From DataBase
-        public List<Hero> getAllHeroes()
+        public void LoadAllHeroes()
         {
-            List<Hero> heroes = new List<Hero>();
-
+             getAllHeroes();
+        }
+        
+        public void LoadHeroesByAttribute()
+        {
+            getHeroesByAgility();
+            getHeroesByIntelligence();
+            getHeroesByStrength();
+        }
+        
+        
+        //Get All Heroes From DataBase
+        public void getAllHeroes()
+        {
             //< get records > 
             string query = @"SELECT hero.id, hero.name, hero.attack_id, hero.attribute_id, hero.role_id, attack.type AS type_name, attribute.name AS attribute_name FROM 
                             Heroes hero, AttackType attack, Attribute attribute Where hero.attack_id = attack.id AND
@@ -33,16 +57,12 @@ namespace Dota2Picker.Objects
 
             using (var statement = new SQLite.SQLiteConnection(dbName))
             {
-                heroes = statement.Query<Hero>(query);
+                 AllHeroesList = statement.Query<Hero>(query);
             }
-
-            return heroes;
         }
 
-        public List<Hero> getHeroesByStrength()
+        public void getHeroesByStrength()
         {
-            List<Hero> heroes = new List<Hero>();
-
             //< get records > 
             string query = @"SELECT hero.id, hero.name, hero.attack_id, hero.attribute_id, hero.role_id, attack.type AS type_name, attribute.name AS attribute_name FROM 
                             Heroes hero, AttackType attack, Attribute attribute Where hero.attack_id = attack.id AND
@@ -50,16 +70,12 @@ namespace Dota2Picker.Objects
 
             using (var statement = new SQLite.SQLiteConnection(dbName))
             {
-                heroes = statement.Query<Hero>(query);
+                HeroesByStrengthList = statement.Query<Hero>(query);
             }
-
-            return heroes;
         }
 
-        public List<Hero> getHeroesByAgility()
+        public void getHeroesByAgility()
         {
-            List<Hero> heroes = new List<Hero>();
-
             //< get records > 
             string query = @"SELECT hero.id, hero.name, hero.attack_id, hero.attribute_id, hero.role_id, attack.type AS type_name, attribute.name AS attribute_name FROM 
                             Heroes hero, AttackType attack, Attribute attribute Where hero.attack_id = attack.id AND
@@ -67,16 +83,12 @@ namespace Dota2Picker.Objects
 
             using (var statement = new SQLite.SQLiteConnection(dbName))
             {
-                heroes = statement.Query<Hero>(query);
+                HeroesByAgilityList = statement.Query<Hero>(query);
             }
-
-            return heroes;
         }
 
-        public List<Hero> getHeroesByIntelligence()
+        public void getHeroesByIntelligence()
         {
-            List<Hero> heroes = new List<Hero>();
-
             //< get records > 
             string query = @"SELECT hero.id, hero.name, hero.attack_id, hero.attribute_id, hero.role_id, attack.type AS type_name, attribute.name AS attribute_name FROM 
                             Heroes hero, AttackType attack, Attribute attribute Where hero.attack_id = attack.id AND
@@ -84,10 +96,8 @@ namespace Dota2Picker.Objects
 
             using (var statement = new SQLite.SQLiteConnection(dbName))
             {
-                heroes = statement.Query<Hero>(query);
+                HeroesByIntelligenceList = statement.Query<Hero>(query);
             }
-
-            return heroes;
         }
 
         //Get all heroes that picked hero is weak against

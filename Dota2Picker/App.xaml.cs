@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Dota2Picker.Objects;
 
 namespace Dota2Picker
 {
@@ -32,6 +33,7 @@ namespace Dota2Picker
 
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
+            DataBaseConnector.dbInstance.LoadAllHeroes();
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -51,36 +53,31 @@ namespace Dota2Picker
 
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;
-
-                // Register a handler for BackRequested events and set the
-                // visibility of the Back button
-                SystemNavigationManager.GetForCurrentView().BackRequested += OnBackRequested;
-
-                SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility =
-                    rootFrame.CanGoBack ?
-                    AppViewBackButtonVisibility.Visible :
-                    AppViewBackButtonVisibility.Collapsed;
+                
             }
+            if ( e.PrelaunchActivated == false)
+            { 
+                if (rootFrame.Content == null)
+                {
+                    // When the navigation stack isn't restored navigate to the first page,
+                    // configuring the new page by passing required information as a navigation
+                    // parameter
+                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                }
 
-            if (rootFrame.Content == null)
-            {
-                // When the navigation stack isn't restored navigate to the first page,
-                // configuring the new page by passing required information as a navigation
-                // parameter
-                rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                // Ensure the current window is active
+                Window.Current.Activate();
             }
-
-            // Ensure the current window is active
-            Window.Current.Activate();
+            DataBaseConnector.dbInstance.LoadHeroesByAttribute();
         }
 
         void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
         {
             throw new Exception("Failed to load Page " + e.SourcePageType.FullName);
         }
-
         private void OnNavigated(object sender, NavigationEventArgs e)
         {
+            SystemNavigationManager.GetForCurrentView().BackRequested += OnBackRequested;
             // Each time a navigation event occurs, update the Back button's visibility
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility =
                 ((Frame)sender).CanGoBack ?

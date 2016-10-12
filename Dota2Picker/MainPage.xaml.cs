@@ -9,6 +9,7 @@ using Dota2Picker.Objects;
 using Dota2Picker.Models;
 using System.Collections.Generic;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Core;
 
 
 
@@ -18,48 +19,29 @@ namespace Dota2Picker
 {
     public sealed partial class MainPage : Page
     {
-        private DataBaseConnector db = new DataBaseConnector();
-
-        List<Hero> AllHeroesList = new List<Hero>();
-        List<Hero> HeroesByStrengthList = new List<Hero>();
-        List<Hero> HeroesByAgilityList = new List<Hero>();
-        List<Hero> HeroesByIntelligenceList = new List<Hero>();
-
         private static Hero selectedHero;
 
         int x1, x2;
         bool ShowHideSearchBox = false;
         public MainPage()
         {
-            LoadDbDataHeroes();
             this.InitializeComponent();
             InitializeUi();
-            
+            gridViewHeroes.ItemsSource = DataBaseConnector.AllHeroesList;
+
             MainGrid.ManipulationMode = ManipulationModes.TranslateRailsX;
 
             //CheckDataBase();
             CheckDeviceOrientation();
             Window.Current.SizeChanged += CheckDeviceOrientation;
-            gridViewHeroes.ItemsSource = AllHeroesList;
             /*--------------------- Only For Debug -------------------*/
             //AllHeroesList = db.getAllHeroes();
             
-            List<Hero> EsIsWeakAgainst = db.GetWeakAgainst(1); // 1 means hero index. It depends on user choice
+            //List<Hero> EsIsWeakAgainst = db.GetWeakAgainst(1); // 1 means hero index. It depends on user choice
 
-            List<Hero> EsIsStrongAgainst = db.GetStrongAgainst(1); // 1 means hero index. It depends on user choice
+            //List<Hero> EsIsStrongAgainst = db.GetStrongAgainst(1); // 1 means hero index. It depends on user choice
             /* ------------------------------------------------------ */
 
-        }
-
-
-
-        /*--------------------- Load data from database -------------------*/
-        private void LoadDbDataHeroes()
-        {
-            AllHeroesList = db.getAllHeroes();
-            HeroesByStrengthList = db.getHeroesByStrength();
-            HeroesByAgilityList = db.getHeroesByAgility();
-            HeroesByIntelligenceList = db.getHeroesByIntelligence();
         }
 
         private void MainGrid_ManipulationCompleted(object sender, ManipulationCompletedRoutedEventArgs e)
@@ -181,19 +163,19 @@ namespace Dota2Picker
             switch (index)
             {
                 case 0:
-                    gridViewHeroes.ItemsSource = AllHeroesList;
+                    gridViewHeroes.ItemsSource = DataBaseConnector.AllHeroesList;
                     MySplitView.IsPaneOpen = false;
                     break;
                 case 1:
-                    gridViewHeroes.ItemsSource = HeroesByStrengthList;
+                    gridViewHeroes.ItemsSource = DataBaseConnector.HeroesByStrengthList;
                     MySplitView.IsPaneOpen = false;
                     break;
                 case 2:
-                    gridViewHeroes.ItemsSource = HeroesByAgilityList;
+                    gridViewHeroes.ItemsSource = DataBaseConnector.HeroesByAgilityList;
                     MySplitView.IsPaneOpen = false;
                     break;
                 case 3:
-                    gridViewHeroes.ItemsSource = HeroesByIntelligenceList;
+                    gridViewHeroes.ItemsSource = DataBaseConnector.HeroesByIntelligenceList;
                     MySplitView.IsPaneOpen = false;
                     break;
                 default:
