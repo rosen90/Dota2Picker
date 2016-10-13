@@ -31,8 +31,17 @@ namespace Dota2Picker
         public HeroPage()
         {
             this.InitializeComponent();
+            this.Loaded += ChallengePage_Loaded;
 
-            textBlock.Text = heroID.ToString();
+
+         
+        }
+
+        void ChallengePage_Loaded(object sender, RoutedEventArgs e)
+        {
+            Thickness margin = heroTitle.Margin;
+            margin.Left = -(int)HamburgerButton.ActualWidth;
+            heroTitle.Margin = margin;
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -44,10 +53,23 @@ namespace Dota2Picker
         {
             base.OnNavigatedTo(e);
 
-            Hero ChoesenHero = (Hero)e.Parameter;
-            heroID = ChoesenHero.id;
+            Hero ChosenHero = (Hero)e.Parameter;
+            heroID = ChosenHero.id;
 
-            textBlock.Text = heroID.ToString();
+            heroTitle.Text = ChosenHero.name;
+            //textBlock.Text = heroID.ToString();
+
+        }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+        }
+
+        private void IconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //_lastIndexForHeroesView = IconsListBox.SelectedIndex;
+            //UpdateGridViewItems(_lastIndexForHeroesView);
 
         }
 

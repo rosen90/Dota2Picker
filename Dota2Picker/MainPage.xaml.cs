@@ -128,12 +128,12 @@ namespace Dota2Picker
 
             if (ApplicationView.GetForCurrentView().Orientation == ApplicationViewOrientation.Landscape)
             {
-                MySplitView.CompactPaneLength = 56;
+                MySplitView.CompactPaneLength = Constants.hamburgerMenuWith;
                 HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.White);
                 SolidColorBrush backgroundBrush = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 43, 43, 43));
                 HamburgerButton.Background = backgroundBrush;
 
-                margin.Left = 62;
+                margin.Left = Constants.gridheroesOffset;
                 gridHeroes.Margin = margin;
             }
             else
@@ -207,11 +207,11 @@ namespace Dota2Picker
 
             if (ApplicationView.GetForCurrentView().Orientation == ApplicationViewOrientation.Landscape)
             {
-                MySplitView.CompactPaneLength = 56;
+                MySplitView.CompactPaneLength = Constants.hamburgerMenuWith;
                 HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.White);
                 HamburgerButton.Background = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 43, 43, 43));
 
-                margin.Left = 62;
+                margin.Left = Constants.gridheroesOffset;
                 gridHeroes.Margin = margin;
             }
             else
@@ -224,6 +224,5 @@ namespace Dota2Picker
                 gridHeroes.Margin = margin;
             }
         }
-
     }
 }

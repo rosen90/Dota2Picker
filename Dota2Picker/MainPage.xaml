@@ -60,7 +60,7 @@
                 Click="Button_Click" Style="{StaticResource ButtonStyle1}">
         </Button>
 
-        <!-- Info Message -->
+            <!-- Info Message -->
         <TextBlock Name="InfoMsg"
                    Grid.Row="1" 
                    Grid.Column="0" 
@@ -69,6 +69,7 @@
                    TextWrapping="WrapWholeWords" 
                    FontFamily="Georgia"
                    FontSize="24"
+                   Margin="8"
                    Foreground="Bisque"
                    Text="Select a hero to counter it..." 
                   />
@@ -92,7 +93,7 @@
                 <GridView.ItemTemplate>
                     <DataTemplate x:DataType="localModels:Hero">
                         <Grid ToolTipService.ToolTip="{x:Bind name}" ToolTipService.Placement="Top" HorizontalAlignment="Center" Width="102" Height="75">
-                            <Image Width="100" Height="70" Source="{x:Bind imgPath}" HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
+                            <Image Width="100"  Height="70" Source="{x:Bind imgPath}" HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
                             <TextBlock FontSize="14" Foreground="Bisque" Text="{x:Bind name}" MaxWidth="102" HorizontalAlignment="Center" VerticalAlignment="Bottom"></TextBlock>
                         </Grid>
                     </DataTemplate>

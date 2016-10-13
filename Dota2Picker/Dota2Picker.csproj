@@ -231,6 +231,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Hero.cs" />
+    <Compile Include="Objects\Constants.cs" />
     <Compile Include="Objects\DataBaseConnector.cs" />
     <Compile Include="Objects\SQLite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

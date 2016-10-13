@@ -28,13 +28,13 @@
     <AppXManifest Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-10-12T17:31:18.847</Modified>
+      <Modified>2016-10-13T14:04:25.510</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.exe">
       <PackagePath>entrypoint\Dota2Picker.exe</PackagePath>
-      <Modified>2016-10-12T17:31:18.226</Modified>
+      <Modified>2016-10-13T14:04:24.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\karad\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1029,7 +1029,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\HeroData.db">
       <PackagePath>HeroData.db</PackagePath>
-      <Modified>2016-10-05T09:02:46.707</Modified>
+      <Modified>2016-10-13T11:49:03.768</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -1037,7 +1037,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.xr.xml">
       <PackagePath>Dota2Picker.xr.xml</PackagePath>
-      <Modified>2016-10-12T17:26:14.726</Modified>
+      <Modified>2016-10-13T13:39:22.857</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1046,11 +1046,11 @@
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-10-12T17:26:22.499</Modified>
+      <Modified>2016-10-13T14:04:24.940</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\Dota2Picker.exe">
       <PackagePath>Dota2Picker.exe</PackagePath>
-      <Modified>2016-10-12T17:31:18.843</Modified>
+      <Modified>2016-10-13T14:04:25.505</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
