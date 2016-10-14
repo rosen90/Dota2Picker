@@ -10,5 +10,7 @@ namespace Dota2Picker.Objects
     {
         public const int hamburgerMenuWith = 56;
         public const int gridheroesOffset = 62;
+        public const int heroPortraitLandOffset = 66;
+        public const int heroPortraitOffset = 20;
     }
 }

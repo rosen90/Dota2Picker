@@ -17,45 +17,44 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
         <!--Darker Search bar -->
         <Rectangle Grid.Row="0" 
-                   Grid.ColumnSpan="10" 
+                   Grid.ColumnSpan="3" 
                    Fill="#572b98" />
 
-        <!-- Main SearchBox --><!--
-        <TextBox x:Name="SearchBox" 
-                 Foreground="Bisque"
-                 Visibility="Collapsed" 
-                 Grid.Row="0"
-                 Grid.Column="1"
-                 Grid.ColumnSpan="9" 
-                 FontSize="24" 
-                 PlaceholderText="Search..."
-                 TextChanged="SearchBox_TextChanged"
-                 Style="{StaticResource TextBoxStyle1}"/>-->
-
+        <!-- Hero title text block -->
         <TextBlock x:Name="heroTitle"
                    Grid.Row="0"
                    Grid.Column="1"
-                   Grid.ColumnSpan="9"
+                   Grid.ColumnSpan="2"
                    FontSize="24"
                    FontWeight="Bold"
                    Foreground="Bisque"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   Margin="0,0,0,0"
-                   Text="Legion Commander"/>
+                   Margin="0,0,0,0"/>
+
+        <Border x:Name="heroPortrait" 
+                Grid.Row="1" 
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                CornerRadius="5"
+                Margin="20,20,0,0"
+                BorderBrush="Black"
+                BorderThickness="5"
+                Width="220"
+                Height="150">
+            
+            <Border.Background>
+                <ImageBrush ImageSource="{x:Bind imagePath}" ></ImageBrush>
+            </Border.Background>
+        </Border>
 
 
         <!--Hamburger Menu -->
@@ -75,7 +74,7 @@
                    OpenPaneLength="190" 
                    CompactPaneLength="0" 
                    HorizontalAlignment="Left"
-                   Grid.RowSpan="3"
+                   Grid.RowSpan="2"
                    ManipulationMode="TranslateX">
 
             <SplitView.Pane>

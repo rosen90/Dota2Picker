@@ -32,7 +32,6 @@ namespace Dota2Picker
 
             MainGrid.ManipulationMode = ManipulationModes.TranslateRailsX;
 
-            //CheckDataBase();
             CheckDeviceOrientation();
             Window.Current.SizeChanged += CheckDeviceOrientation;
             /*--------------------- Only For Debug -------------------*/
@@ -122,30 +121,7 @@ namespace Dota2Picker
             }
         }
         
-        private void CheckDeviceOrientation(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
-        {
-            Thickness margin = gridHeroes.Margin;
-
-            if (ApplicationView.GetForCurrentView().Orientation == ApplicationViewOrientation.Landscape)
-            {
-                MySplitView.CompactPaneLength = Constants.hamburgerMenuWith;
-                HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.White);
-                SolidColorBrush backgroundBrush = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 43, 43, 43));
-                HamburgerButton.Background = backgroundBrush;
-
-                margin.Left = Constants.gridheroesOffset;
-                gridHeroes.Margin = margin;
-            }
-            else
-            {
-                MySplitView.CompactPaneLength = 0;
-                HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
-                HamburgerButton.Background = new SolidColorBrush(Windows.UI.Colors.Transparent);
-
-                margin.Left = 0;
-                gridHeroes.Margin = margin;
-            }
-        }
+ 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
@@ -198,6 +174,31 @@ namespace Dota2Picker
             {
                 tempList = tempList.FindAll( item => item.name.ToLower().Contains(SearchBox.Text.ToLower()));
                 gridViewHeroes.ItemsSource = tempList;
+            }
+        }
+
+        private void CheckDeviceOrientation(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
+        {
+            Thickness margin = gridHeroes.Margin;
+
+            if (ApplicationView.GetForCurrentView().Orientation == ApplicationViewOrientation.Landscape)
+            {
+                MySplitView.CompactPaneLength = Constants.hamburgerMenuWith;
+                HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.White);
+                SolidColorBrush backgroundBrush = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 43, 43, 43));
+                HamburgerButton.Background = backgroundBrush;
+
+                margin.Left = Constants.gridheroesOffset;
+                gridHeroes.Margin = margin;
+            }
+            else
+            {
+                MySplitView.CompactPaneLength = 0;
+                HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
+                HamburgerButton.Background = new SolidColorBrush(Windows.UI.Colors.Transparent);
+
+                margin.Left = 0;
+                gridHeroes.Margin = margin;
             }
         }
 
