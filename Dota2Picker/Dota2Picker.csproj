@@ -103,6 +103,7 @@
     <Content Include="Assets\StoreLogo.scale-400.jpg" />
     <Content Include="Assets\Wide310x150Logo.scale-200.jpg" />
     <Content Include="Resources\agility.png" />
+    <Content Include="Resources\Range.png" />
     <Content Include="Resources\Images\1.png" />
     <Content Include="Resources\Images\10.png" />
     <Content Include="Resources\Images\100.png" />
@@ -218,6 +219,7 @@
     <Content Include="HeroData.db" />
     <Content Include="Resources\intelligence.png" />
     <Content Include="Resources\strength.png" />
+    <Content Include="Resources\Mele.png" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +233,8 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Hero.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Objects\BaseViewObject.cs" />
     <Compile Include="Objects\Constants.cs" />
     <Compile Include="Objects\DataBaseConnector.cs" />
     <Compile Include="Objects\SQLite.cs" />

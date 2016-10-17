@@ -130,5 +130,18 @@ namespace Dota2Picker.Objects
             return heroes;
         }
 
+        public List<Role> GetHeroRoles(int heroIndex)
+        {
+            List<Role> roles = new List<Role>();
+
+            string query = @"SELECT r.name FROM Roles r, HeroRoles hr WHERE hr.id_role = r.id AND hr.id_hero = " + heroIndex;
+
+            using (var statement = new SQLite.SQLiteConnection(dbName))
+            {
+                roles = statement.Query<Role>(query);
+            }
+
+            return roles;
+        }
     }
 }

@@ -44,7 +44,8 @@
                  Grid.Column="1"
                  Grid.ColumnSpan="9" 
                  FontSize="24" 
-                 PlaceholderText="Search..." 
+                 PlaceholderText="Search..."
+                                                    
                  Style="{StaticResource TextBoxStyle1}"/>
         
         <!-- Show Hide SearchBox-->
@@ -59,7 +60,7 @@
                                      Style="{StaticResource ButtonStyle1}">
         </Button>
 
-        <!-- Info Message -->
+            <!-- Info Message -->
         <TextBlock x:ConnectionId='5' Name="InfoMsg"
                    Grid.Row="1" 
                    Grid.Column="0" 
@@ -68,6 +69,7 @@
                    TextWrapping="WrapWholeWords" 
                    FontFamily="Georgia"
                    FontSize="24"
+                   Margin="8"
                    Foreground="Bisque"
                    Text="Select a hero to counter it..." 
                   />
@@ -91,7 +93,7 @@
                 <GridView.ItemTemplate>
                     <DataTemplate                              >
                         <Grid x:ConnectionId='16'                                        ToolTipService.Placement="Top" HorizontalAlignment="Center" Width="102" Height="75">
-                            <Image x:ConnectionId='17' Width="100" Height="70"                           HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
+                            <Image x:ConnectionId='17' Width="100"  Height="70"                           HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
                             <TextBlock x:ConnectionId='18' FontSize="14" Foreground="Bisque"                      MaxWidth="102" HorizontalAlignment="Center" VerticalAlignment="Bottom"></TextBlock>
                         </Grid>
                     </DataTemplate>
@@ -116,7 +118,7 @@
                    OpenPaneLength="190" 
                    CompactPaneLength="0" 
                    HorizontalAlignment="Left"
-                   Grid.RowSpan="3"
+                   Grid.RowSpan="2"
                    ManipulationMode="TranslateX">
 
             <SplitView.Pane>

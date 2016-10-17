@@ -28,13 +28,13 @@
     <AppXManifest Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-10-14T13:38:24.683</Modified>
+      <Modified>2016-10-17T09:50:47.630</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.exe">
       <PackagePath>entrypoint\Dota2Picker.exe</PackagePath>
-      <Modified>2016-10-14T13:38:22.606</Modified>
+      <Modified>2016-10-17T09:50:45.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\karad\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -543,6 +543,10 @@
       <PackagePath>Resources\agility.png</PackagePath>
       <Modified>2016-10-05T09:02:46.940</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\bow.png">
+      <PackagePath>Resources\bow.png</PackagePath>
+      <Modified>2016-10-17T09:11:37.113</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\Images\1.png">
       <PackagePath>Resources\Images\1.png</PackagePath>
       <Modified>2016-10-05T09:02:46.765</Modified>
@@ -999,6 +1003,10 @@
       <PackagePath>Resources\strength.png</PackagePath>
       <Modified>2016-10-05T09:02:46.942</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Resources\sword.png">
+      <PackagePath>Resources\sword.png</PackagePath>
+      <Modified>2016-10-17T08:53:16.974</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2016-10-05T09:02:46.613</Modified>
@@ -1037,7 +1045,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.xr.xml">
       <PackagePath>Dota2Picker.xr.xml</PackagePath>
-      <Modified>2016-10-14T13:07:19.394</Modified>
+      <Modified>2016-10-17T09:30:44.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1046,11 +1054,11 @@
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-10-14T13:38:24.045</Modified>
+      <Modified>2016-10-17T09:50:46.907</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\Dota2Picker.exe">
       <PackagePath>Dota2Picker.exe</PackagePath>
-      <Modified>2016-10-14T13:38:24.670</Modified>
+      <Modified>2016-10-17T09:50:47.624</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -31,6 +31,12 @@ namespace Dota2Picker
         private static int heroID;
         private string imagePath;
 
+        private static string heroImgBasePath = "Resources/";
+
+        private string heroAttPath;
+        private string heroRangePath;
+
+
         public HeroPage()
         {
             this.InitializeComponent();
@@ -47,6 +53,7 @@ namespace Dota2Picker
             Thickness margin = heroTitle.Margin;
             margin.Left = -(int)HamburgerButton.ActualWidth;
             heroTitle.Margin = margin;
+            
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -64,6 +71,48 @@ namespace Dota2Picker
             imagePath = ChosenHero.imgPath;
             heroTitle.Text = ChosenHero.name;
 
+            SetHeroAttribute(ChosenHero.attribute_id);
+            SetHeroRange(ChosenHero.type_name);
+
+            heroRoles.Text = GetHeroRoles(ChosenHero.id);
+
+        }
+
+        private string GetHeroRoles(int heroIndex)
+        {
+            List<Role> heroRoles = DataBaseConnector.dbInstance.GetHeroRoles(heroIndex);
+
+            string roles = "";
+
+            for (int i = 0; i < heroRoles.Count; i++)
+            {
+                roles += heroRoles[i].name + " ";
+            }
+
+            return roles;
+        }
+
+        private void SetHeroRange(string rangeType)
+        {
+            heroRangeText.Text = rangeType;
+            heroRangePath = heroImgBasePath + rangeType + ".png";
+        }
+
+        private void SetHeroAttribute(int attributeId)
+        {
+            switch (attributeId)
+            {
+                case 1: heroAttributeText.Text = "Strength";
+                        heroAttPath = heroImgBasePath + "strength.png";
+                    break;
+                case 2: heroAttributeText.Text = "Agility";
+                        heroAttPath = heroImgBasePath + "agility.png";
+                    break;
+                case 3: heroAttributeText.Text = "Intelligence";
+                        heroAttPath = heroImgBasePath + "intelligence.png";
+                        heroAttributeText.FontSize = 16;
+                    break;
+            }
         }
 
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
@@ -81,6 +130,7 @@ namespace Dota2Picker
         private void CheckDeviceOrientation(object sender, WindowSizeChangedEventArgs e)
         {
             Thickness margin = heroPortrait.Margin;
+            Thickness weakStaticMargin = IsWeakStaticTxt.Margin;
 
             if (ApplicationView.GetForCurrentView().Orientation == ApplicationViewOrientation.Landscape)
             {
@@ -92,6 +142,11 @@ namespace Dota2Picker
 
                 margin.Left = Constants.heroPortraitLandOffset;
                 heroPortrait.Margin = margin;
+                heroRoles.Margin = margin;
+
+                weakStaticMargin.Left = Constants.heroPortraitLandOffset;
+
+                IsWeakStaticTxt.Margin = weakStaticMargin;
 
             }
             else
@@ -102,6 +157,10 @@ namespace Dota2Picker
 
                 margin.Left = Constants.heroPortraitOffset;
                 heroPortrait.Margin = margin;
+                heroRoles.Margin = margin;
+
+                weakStaticMargin.Left = Constants.heroPortraitOffset;
+                IsWeakStaticTxt.Margin = weakStaticMargin;
 
             }
         }
@@ -109,6 +168,7 @@ namespace Dota2Picker
         private void CheckDeviceOrientation()
         {
             Thickness margin = heroPortrait.Margin;
+            Thickness weakStaticMargin = IsWeakStaticTxt.Margin;
 
             if (ApplicationView.GetForCurrentView().Orientation == ApplicationViewOrientation.Landscape)
             {
@@ -118,6 +178,10 @@ namespace Dota2Picker
 
                 margin.Left = Constants.heroPortraitLandOffset;
                 heroPortrait.Margin = margin;
+                heroRoles.Margin = margin;
+
+                weakStaticMargin.Left = Constants.heroPortraitLandOffset;
+                IsWeakStaticTxt.Margin = weakStaticMargin;
 
             }
             else
@@ -128,6 +192,10 @@ namespace Dota2Picker
 
                 margin.Left = Constants.heroPortraitOffset;
                 heroPortrait.Margin = margin;
+                heroRoles.Margin = margin;
+
+                weakStaticMargin.Left = Constants.heroPortraitOffset;
+                IsWeakStaticTxt.Margin = weakStaticMargin;
             }
         }
 

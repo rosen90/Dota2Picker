@@ -12,6 +12,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="Style" />
+      <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="MinWidth" />
@@ -68,11 +69,11 @@
       <RootProperty Name="Style" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Name" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Content" />
       <RootProperty Name="Background" />
-      <RootProperty Name="Name" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBoxItem">
@@ -167,6 +168,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="CornerRadius" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.TranslateTransform" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
@@ -191,11 +193,10 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontWeight" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
       <RootProperty Name="Name" />
+      <RootProperty Name="TextWrapping" />
       <RootProperty Name="MaxWidth" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
@@ -218,7 +219,6 @@
       <RootEvent Name="ManipulationStarted" />
       <RootEvent Name="ManipulationCompleted" />
     </RootType>
-    <RootType FullName="Dota2Picker.HeroPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
       <RootProperty Name="Name" />
       <RootProperty Name="DisplayMode" />
@@ -250,6 +250,11 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
+      <RootProperty Name="ImageSource" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
+    <RootType FullName="Dota2Picker.HeroPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="SelectionMode" />
@@ -265,7 +270,6 @@
       <RootMethod Name="GetPlacement" />
       <RootMethod Name="SetPlacement" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="Dota2Picker.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="Items" />

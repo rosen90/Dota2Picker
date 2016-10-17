@@ -19,24 +19,24 @@ namespace Dota2Picker
     public sealed partial class MainPage : Page
     {
         private static Hero selectedHero;
-
-        private int _lastIndexForHeroesView;
+        
         int x1, x2;
         bool ShowHideSearchBox = false;
         public MainPage()
         {
             this.InitializeComponent();
             InitializeUi();
-            _lastIndexForHeroesView = 0;
             gridViewHeroes.ItemsSource = DataBaseConnector.AllHeroesList;
 
             MainGrid.ManipulationMode = ManipulationModes.TranslateRailsX;
 
             CheckDeviceOrientation();
             Window.Current.SizeChanged += CheckDeviceOrientation;
+            UpdateGridViewItems(BaseViewObject.bvoInstance.lastHeroView);
+            
             /*--------------------- Only For Debug -------------------*/
             //AllHeroesList = db.getAllHeroes();
-            
+
             //List<Hero> EsIsWeakAgainst = db.GetWeakAgainst(1); // 1 means hero index. It depends on user choice
 
             //List<Hero> EsIsStrongAgainst = db.GetStrongAgainst(1); // 1 means hero index. It depends on user choice
@@ -136,8 +136,8 @@ namespace Dota2Picker
 
         private void IconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            _lastIndexForHeroesView = IconsListBox.SelectedIndex;
-            UpdateGridViewItems(_lastIndexForHeroesView);
+            BaseViewObject.bvoInstance.lastHeroView = IconsListBox.SelectedIndex;
+            UpdateGridViewItems(BaseViewObject.bvoInstance.lastHeroView);
             
         }
 
@@ -168,7 +168,7 @@ namespace Dota2Picker
 
         private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            UpdateGridViewItems(_lastIndexForHeroesView);
+            UpdateGridViewItems(BaseViewObject.bvoInstance.lastHeroView);
             List<Hero> tempList = ((IEnumerable<Hero>)this.gridViewHeroes.ItemsSource).ToList();
             if ( SearchBox.Text.Length != 0)
             {
