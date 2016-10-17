@@ -7,7 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="MainGrid" Background="#61369f">
+    <Grid x:Name="MainGrid" Background="#61369f" ManipulationMode="TranslateRailsX" 
+          ManipulationStarted="MainGrid_ManipulationStarted"
+          ManipulationCompleted="MainGrid_ManipulationCompleted">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />

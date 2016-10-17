@@ -36,6 +36,8 @@ namespace Dota2Picker
         private string heroAttPath;
         private string heroRangePath;
 
+        private int x1, x2;
+
 
         public HeroPage()
         {
@@ -199,5 +201,25 @@ namespace Dota2Picker
             }
         }
 
+        private void MainGrid_ManipulationStarted(object sender, ManipulationStartedRoutedEventArgs e)
+        {
+            x1 = (int)e.Position.X;
+        }
+
+        private void MainGrid_ManipulationCompleted(object sender, ManipulationCompletedRoutedEventArgs e)
+        {
+            x2 = (int)e.Position.X;
+            Hero nextHero = new Hero();
+            if ( x2 < x1 && (x1-x2) > 100 && heroID < DataBaseConnector.AllHeroesList.Last().id)
+            {
+                nextHero = DataBaseConnector.AllHeroesList.Find(item => item.id == (heroID + 1));
+                this.Frame.Navigate(typeof(HeroPage), nextHero);
+            }
+            else if ( x2 > x1 && ( x2 - x1 ) > 100 && heroID > DataBaseConnector.AllHeroesList.First().id)
+            {
+                nextHero = DataBaseConnector.AllHeroesList.Find(item => item.id == (heroID - 1));
+                this.Frame.Navigate(typeof(HeroPage), nextHero);
+            }
+        }
     }
 }

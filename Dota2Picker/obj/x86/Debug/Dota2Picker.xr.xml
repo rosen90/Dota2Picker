@@ -99,8 +99,11 @@
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="BorderBrush" />
+      <RootProperty Name="ManipulationMode" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
+      <RootEvent Name="ManipulationStarted" />
+      <RootEvent Name="ManipulationCompleted" />
       <RootMethod Name="GetColumnSpan" />
       <RootMethod Name="SetColumnSpan" />
       <RootMethod Name="GetRow" />
