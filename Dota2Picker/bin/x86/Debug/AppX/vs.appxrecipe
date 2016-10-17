@@ -28,13 +28,13 @@
     <AppXManifest Include="E:\gitProjects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-10-17T19:45:09.925</Modified>
+      <Modified>2016-10-17T21:12:51.606</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\gitProjects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.exe">
       <PackagePath>entrypoint\Dota2Picker.exe</PackagePath>
-      <Modified>2016-10-17T19:45:07.453</Modified>
+      <Modified>2016-10-17T21:12:51.031</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ramzi_bm\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1045,7 +1045,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\gitProjects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.xr.xml">
       <PackagePath>Dota2Picker.xr.xml</PackagePath>
-      <Modified>2016-10-17T19:41:54.283</Modified>
+      <Modified>2016-10-17T20:59:45.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1054,11 +1054,11 @@
     <AppxPackagedFile Include="E:\gitProjects\Dota2Picker\Dota2Picker\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-10-17T19:45:09.323</Modified>
+      <Modified>2016-10-17T21:10:58.109</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\gitProjects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\Dota2Picker.exe">
       <PackagePath>Dota2Picker.exe</PackagePath>
-      <Modified>2016-10-17T19:45:09.921</Modified>
+      <Modified>2016-10-17T21:12:51.602</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

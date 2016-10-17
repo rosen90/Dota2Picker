@@ -109,8 +109,16 @@
                    />
        
         <!-- All Heroes Roles -->
+        <ProgressRing x:Name="progresHeroRoles"
+                      IsActive="True"
+                      Grid.Row="2"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   VerticalAlignment="Top"
+                   Height="40"
+                   Foreground="Bisque"   ></ProgressRing>
         <TextBlock x:Name="heroRoles"
-                   Text="Carry Nuker Durable Espace Disabler Initiator" 
+                   Text="" 
                    Grid.Row="2"
                    Grid.Column="0"
                    Grid.ColumnSpan="3"

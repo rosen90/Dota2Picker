@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Navigation;
 using Dota2Picker.Objects;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.ViewManagement;
+using System.Threading.Tasks;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -63,7 +64,7 @@ namespace Dota2Picker
             base.OnNavigatedFrom(e);
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
 
@@ -76,10 +77,23 @@ namespace Dota2Picker
             SetHeroAttribute(ChosenHero.attribute_id);
             SetHeroRange(ChosenHero.type_name);
 
-            heroRoles.Text = GetHeroRoles(ChosenHero.id);
+            EnableProgressRing();
+            heroRoles.Text = await Task.Run( () => GetHeroRoles(ChosenHero.id));
+            DisableProgressRing();
 
         }
-
+        #region ProgressRing
+        private void EnableProgressRing()
+        {
+            progresHeroRoles.IsActive = true;
+            progresHeroRoles.Visibility = Visibility.Visible;
+        }
+        private void DisableProgressRing()
+        {
+            progresHeroRoles.IsActive = false;
+            progresHeroRoles.Visibility = Visibility.Collapsed;
+        }
+        #endregion
         private string GetHeroRoles(int heroIndex)
         {
             List<Role> heroRoles = DataBaseConnector.dbInstance.GetHeroRoles(heroIndex);
@@ -90,7 +104,6 @@ namespace Dota2Picker
             {
                 roles += heroRoles[i].name + " ";
             }
-
             return roles;
         }
 
