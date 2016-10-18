@@ -79,7 +79,10 @@ namespace Dota2Picker
 
             EnableProgressRing();
             heroRoles.Text = await Task.Run( () => GetHeroRoles(ChosenHero.id));
+            GetWeakAgainstHeroes();
+            GetStrongAgainstHeroes();
             DisableProgressRing();
+
 
         }
         #region ProgressRing
@@ -94,6 +97,17 @@ namespace Dota2Picker
             progresHeroRoles.Visibility = Visibility.Collapsed;
         }
         #endregion
+
+        public void GetWeakAgainstHeroes()
+        {
+            IsWeakList.ItemsSource = DataBaseConnector.dbInstance.GetWeakAgainst(heroID);
+        }
+
+        public void GetStrongAgainstHeroes()
+        {
+            IsStrongList.ItemsSource = DataBaseConnector.dbInstance.GetStrongAgainst(heroID);
+        }
+
         private string GetHeroRoles(int heroIndex)
         {
             List<Role> heroRoles = DataBaseConnector.dbInstance.GetHeroRoles(heroIndex);
@@ -145,7 +159,8 @@ namespace Dota2Picker
         private void CheckDeviceOrientation(object sender, WindowSizeChangedEventArgs e)
         {
             Thickness margin = heroPortrait.Margin;
-            Thickness weakStaticMargin = IsWeakStaticTxt.Margin;
+            Thickness staticTxtMargin = IsWeakStaticTxt.Margin;
+            Thickness listMargin = IsWeakList.Margin;
 
             if (ApplicationView.GetForCurrentView().Orientation == ApplicationViewOrientation.Landscape)
             {
@@ -154,15 +169,18 @@ namespace Dota2Picker
                 SolidColorBrush backgroundBrush = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 43, 43, 43));
                 HamburgerButton.Background = backgroundBrush;
 
-
+                /* LEFT hamburger offset margins */
                 margin.Left = Constants.heroPortraitLandOffset;
                 heroPortrait.Margin = margin;
                 heroRoles.Margin = margin;
 
-                weakStaticMargin.Left = Constants.heroPortraitLandOffset;
+                staticTxtMargin.Left = Constants.heroPortraitLandOffset;
+                IsWeakStaticTxt.Margin = staticTxtMargin;
+                IsStrongStaticTxt.Margin = staticTxtMargin;
 
-                IsWeakStaticTxt.Margin = weakStaticMargin;
-
+                listMargin.Left = Constants.ListLandOffset;
+                IsWeakList.Margin = listMargin;
+                IsStrongList.Margin = listMargin;
             }
             else
             {
@@ -170,20 +188,26 @@ namespace Dota2Picker
                 HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
                 HamburgerButton.Background = new SolidColorBrush(Windows.UI.Colors.Transparent);
 
+                /* LEFT hamburger offset margins */
                 margin.Left = Constants.heroPortraitOffset;
                 heroPortrait.Margin = margin;
                 heroRoles.Margin = margin;
 
-                weakStaticMargin.Left = Constants.heroPortraitOffset;
-                IsWeakStaticTxt.Margin = weakStaticMargin;
+                staticTxtMargin.Left = Constants.heroPortraitOffset;
+                IsWeakStaticTxt.Margin = staticTxtMargin;
+                IsStrongStaticTxt.Margin = staticTxtMargin;
 
+                staticTxtMargin.Left = Constants.ListPortraitOff;
+                IsWeakList.Margin = staticTxtMargin;
+                IsStrongList.Margin = staticTxtMargin;
             }
         }
 
         private void CheckDeviceOrientation()
         {
             Thickness margin = heroPortrait.Margin;
-            Thickness weakStaticMargin = IsWeakStaticTxt.Margin;
+            Thickness staticTxtMargin = IsWeakStaticTxt.Margin;
+            Thickness listsMargin = IsWeakList.Margin;
 
             if (ApplicationView.GetForCurrentView().Orientation == ApplicationViewOrientation.Landscape)
             {
@@ -191,13 +215,18 @@ namespace Dota2Picker
                 HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.White);
                 HamburgerButton.Background = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 43, 43, 43));
 
+                /* LEFT hamburger offset margins */
                 margin.Left = Constants.heroPortraitLandOffset;
                 heroPortrait.Margin = margin;
                 heroRoles.Margin = margin;
 
-                weakStaticMargin.Left = Constants.heroPortraitLandOffset;
-                IsWeakStaticTxt.Margin = weakStaticMargin;
+                staticTxtMargin.Left = Constants.heroPortraitLandOffset;
+                IsWeakStaticTxt.Margin = staticTxtMargin;
+                IsStrongStaticTxt.Margin = staticTxtMargin;
 
+                listsMargin.Left = Constants.ListLandOffset;
+                IsWeakList.Margin = listsMargin;
+                IsStrongList.Margin = listsMargin;
             }
             else
             {
@@ -205,12 +234,18 @@ namespace Dota2Picker
                 HamburgerButton.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
                 HamburgerButton.Background = new SolidColorBrush(Windows.UI.Colors.Transparent);
 
+                /* LEFT hamburger offset margins */
                 margin.Left = Constants.heroPortraitOffset;
                 heroPortrait.Margin = margin;
                 heroRoles.Margin = margin;
 
-                weakStaticMargin.Left = Constants.heroPortraitOffset;
-                IsWeakStaticTxt.Margin = weakStaticMargin;
+                staticTxtMargin.Left = Constants.heroPortraitOffset;
+                IsWeakStaticTxt.Margin = staticTxtMargin;
+                IsStrongStaticTxt.Margin = staticTxtMargin;
+
+                listsMargin.Left = Constants.ListPortraitOff;
+                IsWeakList.Margin = listsMargin;
+                IsStrongList.Margin = listsMargin;
             }
         }
 

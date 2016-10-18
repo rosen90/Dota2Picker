@@ -5,17 +5,22 @@
     xmlns:local="using:Dota2Picker"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:localModels="using:Dota2Picker.Models"
     mc:Ignorable="d">
 
     <Grid x:Name="MainGrid" Background="#61369f" ManipulationMode="TranslateRailsX" 
           ManipulationStarted="MainGrid_ManipulationStarted"
-          ManipulationCompleted="MainGrid_ManipulationCompleted">
+          ManipulationCompleted="MainGrid_ManipulationCompleted"
+          ScrollViewer.VerticalScrollMode="Auto">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -61,7 +66,8 @@
         </Border>
 
         <!-- Hero attribute image -->
-        <Image Width="30" 
+        <Image x:Name="heroAttImg"
+               Width="30" 
                Height="28"
                Source="{x:Bind heroAttPath}" 
                Grid.Row="1"
@@ -112,11 +118,14 @@
         <ProgressRing x:Name="progresHeroRoles"
                       IsActive="True"
                       Grid.Row="2"
-                   Grid.Column="0"
-                   Grid.ColumnSpan="3"
-                   VerticalAlignment="Top"
-                   Height="40"
-                   Foreground="Bisque"   ></ProgressRing>
+                      Grid.Column="0"
+                      Grid.ColumnSpan="3"
+                      VerticalAlignment="Top"
+                      Height="50"
+                      Width="50"
+                      Foreground="Bisque">
+        </ProgressRing>
+        
         <TextBlock x:Name="heroRoles"
                    Text="" 
                    Grid.Row="2"
@@ -139,15 +148,95 @@
                    Margin="0,47,0,0"
                    VerticalAlignment="Top"/>
 
+        <!-- Is Weak Against Heroes List view-->
         <TextBlock x:Name="IsWeakStaticTxt"
                    Text="Is weak against: "
-                   Grid.Row="2"
+                   Grid.Row="3"
                    Grid.Column="0"
                    Grid.ColumnSpan="3"
                    VerticalAlignment="Top"
-                   Margin="20,50,0,0"
+                   Margin="20,0,0,0"
                    FontSize="32"
                    Foreground="Bisque"/>
+        
+        <!-- ListView Controls -->
+        <ListView x:Name="IsWeakList"
+                  ItemsSource="{Binding}"
+                  Grid.Row="4"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="3"
+                  IsItemClickEnabled="True" 
+                  SelectionMode="Single"
+                  Height="125"
+                  Margin="0,0,0,0"
+                  VerticalAlignment ="Bottom"
+                  Style="{StaticResource BaseListViewStyle}">
+            
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Padding" Value="5"/>
+                    <Setter Property="Margin" Value="0"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+            
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="localModels:IsWeakAgainst">
+                    <StackPanel Width="115" ToolTipService.ToolTip="{x:Bind name}" ToolTipService.Placement="Top">
+                        <Border Background="{x:Bind borderColor}" Padding="0">
+                            <TextBlock x:Name="Area" Foreground="White"  Text="{x:Bind type}" FontSize="14" HorizontalAlignment="Center"/>
+                        </Border>
+                        <Image Width="115" Height="65" Source="{x:Bind imgPath}">
+                        </Image>
+                        <TextBlock x:Name="Name" Text="{x:Bind name}" Foreground="Bisque" TextAlignment="Center" FontSize="14"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- Is Weak Against Heroes List view-->
+        <TextBlock x:Name="IsStrongStaticTxt"
+                   Text="Is strong against: "
+                   Grid.Row="5"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   VerticalAlignment="Top"
+                   Margin="20,0,0,0"
+                   FontSize="32"
+                   Foreground="Bisque"/>
+
+        <!-- ListView Controls -->
+        <ListView x:Name="IsStrongList"
+                  ItemsSource="{Binding}"
+                  Grid.Row="6"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="3"
+                  IsItemClickEnabled="True" 
+                  SelectionMode="Single"
+                  Height="125"
+                  Margin="0,0,0,0"
+                  VerticalAlignment ="Bottom"
+                  Style="{StaticResource BaseListViewStyle}">
+
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Padding" Value="5"/>
+                    <Setter Property="Margin" Value="0"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="localModels:IsStrongAgainst">
+                    <StackPanel Width="115" ToolTipService.ToolTip="{x:Bind name}" ToolTipService.Placement="Top">
+                        <Border Background="{x:Bind borderColor}" Padding="0">
+                            <TextBlock x:Name="Area" Foreground="White" HorizontalAlignment="Center" Text="{x:Bind type}" FontSize="14"/>
+                        </Border>
+                        <Image Width="115" Height="65" Source="{x:Bind imgPath}"></Image>
+                        <TextBlock x:Name="Name" Foreground="Bisque" TextAlignment="Center" Text="{x:Bind name}" FontSize="14"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
 
         <!--Hamburger Menu -->
         <Button Name ="HamburgerButton" 
@@ -166,7 +255,7 @@
                    OpenPaneLength="190" 
                    CompactPaneLength="0" 
                    HorizontalAlignment="Left"
-                   Grid.RowSpan="3"
+                   Grid.RowSpan="7"
                    ManipulationMode="TranslateX">
 
             <SplitView.Pane>

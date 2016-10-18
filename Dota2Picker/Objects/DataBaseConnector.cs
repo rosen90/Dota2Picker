@@ -101,30 +101,30 @@ namespace Dota2Picker.Objects
         }
 
         //Get all heroes that picked hero is weak against
-        public List<Hero> GetWeakAgainst(int heroIndex)
+        public List<IsWeakAgainst> GetWeakAgainst(int heroIndex)
         {
-            List<Hero> heroes = new List<Hero>();
+            List<IsWeakAgainst> heroes = new List<IsWeakAgainst>();
 
-            string query = @"SELECT h.id, h.name FROM Heroes h, Weak w WHERE w.weak_id = h.id and w.id = " + heroIndex;
+            string query = @"SELECT w.weak_id, h.name, cp.type  FROM Heroes h, Weak w, CounterType cp WHERE w.weak_id = h.id and w.counter_type = cp.id and w.id = " + heroIndex;
 
             using (var statement = new SQLite.SQLiteConnection(dbName))
             {
-                heroes = statement.Query<Hero>(query);
+                heroes = statement.Query<IsWeakAgainst>(query);
             }
 
             return heroes;
         }
 
         //Get all heroes that picked hero is strong against
-        public List<Hero> GetStrongAgainst(int heroIndex)
+        public List<IsStrongAgainst> GetStrongAgainst(int heroIndex)
         {
-            List<Hero> heroes = new List<Hero>();
+            List<IsStrongAgainst> heroes = new List<IsStrongAgainst>();
 
-            string query = @"SELECT h.id, h.name FROM Heroes h, Strong s WHERE s.strong_id = h.id AND s.id = " + heroIndex;
+            string query = @"SELECT s.strong_id, h.name, cp.type  FROM Heroes h, Strong s, CounterType cp WHERE s.strong_id = h.id and s.counter_type = cp.id and s.id = " + heroIndex;
 
             using (var statement = new SQLite.SQLiteConnection(dbName))
             {
-                heroes = statement.Query<Hero>(query);
+                heroes = statement.Query<IsStrongAgainst>(query);
             }
 
             return heroes;

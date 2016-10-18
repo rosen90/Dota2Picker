@@ -233,6 +233,8 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Hero.cs" />
+    <Compile Include="Models\IsStrongAgainst.cs" />
+    <Compile Include="Models\IsWeakAgainst.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Objects\BaseViewObject.cs" />
     <Compile Include="Objects\Constants.cs" />

@@ -12,5 +12,7 @@ namespace Dota2Picker.Objects
         public const int gridheroesOffset = 62;
         public const int heroPortraitLandOffset = 66;
         public const int heroPortraitOffset = 20;
+        public const int ListLandOffset = 66;
+        public const int ListPortraitOff = 0;
     }
 }
