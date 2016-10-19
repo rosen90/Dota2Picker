@@ -18,6 +18,7 @@ using Dota2Picker.Objects;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.ViewManagement;
 using System.Threading.Tasks;
+using System.Threading;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -37,6 +38,9 @@ namespace Dota2Picker
         private string heroAttPath;
         private string heroRangePath;
 
+
+        CancellationTokenSource ct;
+
         private int x1, x2;
 
 
@@ -44,6 +48,13 @@ namespace Dota2Picker
         {
             this.InitializeComponent();
             this.Loaded += ChallengePage_Loaded;
+
+            this.Unloaded += (sender, e) =>
+            {
+                IsWeakList.ItemsSource = null;
+                IsStrongList.ItemsSource = null;
+                
+            };
 
             MainGrid.ManipulationMode = ManipulationModes.TranslateRailsX;
 
@@ -62,6 +73,7 @@ namespace Dota2Picker
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
+
         }
 
         protected async override void OnNavigatedTo(NavigationEventArgs e)
@@ -77,12 +89,30 @@ namespace Dota2Picker
             SetHeroAttribute(ChosenHero.attribute_id);
             SetHeroRange(ChosenHero.type_name);
 
-            EnableProgressRing();
-            heroRoles.Text = await Task.Run( () => GetHeroRoles(ChosenHero.id));
-            GetWeakAgainstHeroes();
-            GetStrongAgainstHeroes();
-            DisableProgressRing();
+            //Old Behavior
+            //EnableProgressRing();
+            //heroRoles.Text = await Task.Run( () => GetHeroRoles(ChosenHero.id));
+            //GetWeakAgainstHeroes();
+            //GetStrongAgainstHeroes();
+            //DisableProgressRing();
 
+            //New Test Behavior
+            EnableProgressRing();
+
+            if (ct != null && ct.Token.CanBeCanceled)
+            {
+                ct.Cancel();
+            }
+
+            ct = new CancellationTokenSource();
+
+            heroRoles.Text = await Task.Run(() => GetHeroRoles(ChosenHero.id), ct.Token);
+
+            IsWeakList.ItemsSource = await Task.Run(() => DataBaseConnector.dbInstance.GetWeakAgainst(heroID), ct.Token);
+
+            IsStrongList.ItemsSource = await Task.Run(() => DataBaseConnector.dbInstance.GetStrongAgainst(heroID), ct.Token);
+
+            DisableProgressRing();
 
         }
         #region ProgressRing
@@ -144,6 +174,25 @@ namespace Dota2Picker
             }
         }
 
+        private void IsWeakList_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            IsWeakAgainst isWeakHero;
+            isWeakHero = (IsWeakAgainst)e.ClickedItem;
+
+            Hero selectedHero = DataBaseConnector.AllHeroesList.Find(item => item.id == isWeakHero.weak_id);
+            this.Frame.Navigate(typeof(HeroPage), selectedHero);
+        }
+
+        private void IsStrongList_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            IsStrongAgainst isStrongHero;
+            isStrongHero = (IsStrongAgainst)e.ClickedItem;
+
+            Hero selectedHero = DataBaseConnector.AllHeroesList.Find(item => item.id == isStrongHero.strong_id);
+            this.Frame.Navigate(typeof(HeroPage), selectedHero);
+        }
+
+
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
@@ -153,6 +202,8 @@ namespace Dota2Picker
         {
             //_lastIndexForHeroesView = IconsListBox.SelectedIndex;
             //UpdateGridViewItems(_lastIndexForHeroesView);
+            int id = 1;
+            this.Frame.Navigate(typeof(MainPage), id);
 
         }
 

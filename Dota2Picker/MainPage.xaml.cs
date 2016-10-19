@@ -18,7 +18,7 @@ namespace Dota2Picker
 {
     public sealed partial class MainPage : Page
     {
-        private static Hero selectedHero;
+        
         
         int x1, x2;
         bool ShowHideSearchBox = false;
@@ -26,8 +26,14 @@ namespace Dota2Picker
         {
             this.InitializeComponent();
             InitializeUi();
-            gridViewHeroes.ItemsSource = DataBaseConnector.AllHeroesList;
 
+            this.Unloaded += (sender, e) =>
+            {
+                gridViewHeroes.ItemsSource = null;
+            };
+
+            gridViewHeroes.ItemsSource = DataBaseConnector.AllHeroesList;
+            
             MainGrid.ManipulationMode = ManipulationModes.TranslateRailsX;
 
             CheckDeviceOrientation();
@@ -120,15 +126,23 @@ namespace Dota2Picker
                 SearchBox.Visibility = Visibility.Collapsed;
             }
         }
-        
- 
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            int id;
+            if(Int32.TryParse(e.Parameter.ToString(), out id))
+            UpdateGridViewItems(id);
+        }
+
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
+            gridViewHeroes.ItemsSource = null;
         }
 
         private void GridView_ItemClick(object sender, ItemClickEventArgs e)
         {
+            Hero selectedHero;
             selectedHero = (Hero)e.ClickedItem;
 
             this.Frame.Navigate(typeof(HeroPage), selectedHero);
@@ -225,5 +239,6 @@ namespace Dota2Picker
                 gridHeroes.Margin = margin;
             }
         }
+
     }
 }

@@ -20,7 +20,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -167,6 +167,7 @@
                   Grid.ColumnSpan="3"
                   IsItemClickEnabled="True" 
                   SelectionMode="Single"
+                  ItemClick="IsWeakList_ItemClick"
                   Height="125"
                   Margin="0,0,0,0"
                   VerticalAlignment ="Bottom"
@@ -210,7 +211,8 @@
                   Grid.Row="6"
                   Grid.Column="0"
                   Grid.ColumnSpan="3"
-                  IsItemClickEnabled="True" 
+                  IsItemClickEnabled="True"
+                  ItemClick="IsStrongList_ItemClick"
                   SelectionMode="Single"
                   Height="125"
                   Margin="0,0,0,0"
@@ -250,12 +252,13 @@
 
         <SplitView Name="MySplitView" 
                    Grid.Row="1"
-                   Grid.ColumnSpan="5"
+                   Grid.RowSpan="6"
+                   Height="Auto"
+                   Grid.ColumnSpan="3"
                    DisplayMode="CompactOverlay"
                    OpenPaneLength="190" 
                    CompactPaneLength="0" 
                    HorizontalAlignment="Left"
-                   Grid.RowSpan="7"
                    ManipulationMode="TranslateX">
 
             <SplitView.Pane>
