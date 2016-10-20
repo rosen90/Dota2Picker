@@ -148,6 +148,15 @@ namespace Dota2Picker
             this.Frame.Navigate(typeof(HeroPage), selectedHero);
         }
 
+        private void SettingsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //Temporary
+            if (SettingsListBox.SelectedIndex == 1)
+            {
+                this.Frame.Navigate(typeof(SettingsPage));
+            }
+        }
+
         private void IconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             BaseViewObject.bvoInstance.lastHeroView = IconsListBox.SelectedIndex;

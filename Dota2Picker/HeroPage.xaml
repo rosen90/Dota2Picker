@@ -373,9 +373,10 @@
                          Background="#2b2b2b"
                          BorderThickness="0,2,0,0"
                          BorderBrush="White"
+                         SelectionChanged="SettingsListBox_SelectionChanged"
                          ScrollViewer.VerticalScrollMode="Auto">
 
-                        <ListBoxItem x:Name="Tutorial" VerticalAlignment="Bottom" Style="{StaticResource SettingsStyle}">
+                        <ListBoxItem VerticalAlignment="Bottom" Style="{StaticResource SettingsStyle}">
                             <StackPanel Orientation="Horizontal">
                                 <!--Symbol-->
                                 <TextBlock FontFamily="Segoe MDL2 Assets" 
@@ -394,7 +395,7 @@
                             </StackPanel>
                         </ListBoxItem>
 
-                        <ListBoxItem x:Name="Settings" VerticalAlignment="Bottom" Style="{StaticResource SettingsStyle}">
+                        <ListBoxItem VerticalAlignment="Bottom" Style="{StaticResource SettingsStyle}">
                             <StackPanel Orientation="Horizontal">
                                 <!--Symbol-->
                                 <TextBlock FontFamily="Segoe MDL2 Assets" 

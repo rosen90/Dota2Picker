@@ -200,11 +200,16 @@ namespace Dota2Picker
 
         private void IconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //_lastIndexForHeroesView = IconsListBox.SelectedIndex;
-            //UpdateGridViewItems(_lastIndexForHeroesView);
-            int id = 1;
-            this.Frame.Navigate(typeof(MainPage), id);
+            this.Frame.Navigate(typeof(MainPage), IconsListBox.SelectedIndex);
+        }
 
+        private void SettingsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //Temporary
+            if (SettingsListBox.SelectedIndex == 1)
+            {
+                this.Frame.Navigate(typeof(SettingsPage));
+            }
         }
 
         private void CheckDeviceOrientation(object sender, WindowSizeChangedEventArgs e)

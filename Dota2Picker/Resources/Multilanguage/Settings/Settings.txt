@@ -1,0 +1,11 @@
+﻿[SETTINGS_TEXT]
+Opisand dsadasdasas
+[SETTINGS_TEXT]
+
+[ABOUT_TEXT]
+The Dota 2 Picker helps you to counter the opponents hero pick and secure more balanced and skill dependent games. Based on thousands of players experiance and opinions this application will rise your MMR 100% guaranteed.
+[ABOUT_TEXT]
+
+[PRIVACY_TEXT]
+Privitskaldasd
+[PRIVACY_TEXT]

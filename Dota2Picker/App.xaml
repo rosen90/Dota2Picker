@@ -422,6 +422,31 @@
             </Setter>
         </Style>
 
+        <Thickness x:Key="PhoneTouchTargetOverhang">0,9.5</Thickness>
+        <SolidColorBrush x:Key="ButtonDisabledBackgroundThemeBrush" Color="Transparent" />
+        <ControlTemplate x:Key="NoAnimation" TargetType="Button">
+            <Grid x:Name="Grid" Background="Transparent">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="PointerOver" />
+                        <VisualState x:Name="Pressed">
+                        </VisualState>
+                        <VisualState x:Name="Disabled">
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+                <Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+					Background="Transparent" Margin="{ThemeResource PhoneTouchTargetOverhang}">
+                    <ContentPresenter x:Name="ContentPresenter" Foreground="{TemplateBinding Foreground}"
+						HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+						VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Margin="{TemplateBinding Padding}"
+						Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}"
+						AutomationProperties.AccessibilityView="Raw"/>
+                </Border>
+            </Grid>
+        </ControlTemplate>
+
 
     </Application.Resources>
 

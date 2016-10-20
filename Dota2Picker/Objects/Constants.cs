@@ -14,5 +14,7 @@ namespace Dota2Picker.Objects
         public const int heroPortraitOffset = 20;
         public const int ListLandOffset = 66;
         public const int ListPortraitOff = 0;
+
+        public static string[] settingsIdentifiers = { "[SETTINGS_TEXT]", "[ABOUT_TEXT]", "[PRIVACY_TEXT]" };
     }
 }

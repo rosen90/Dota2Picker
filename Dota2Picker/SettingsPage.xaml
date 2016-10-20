@@ -7,27 +7,387 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="LightGray">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
-        <Pivot Grid.Column="1">
-            <PivotItem  Header="PivotItem 0" BorderThickness="1" >
-                <Grid/>
+        <!--Darker Search bar -->
+        <Rectangle Grid.Row="0" 
+                   Grid.ColumnSpan="3" 
+                   Fill="#572b98" />
+
+        <!-- Hero title text block -->
+        <TextBlock x:Name="itemTitle"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   FontSize="24"
+                   Text="Settings Page"
+                   FontWeight="Bold"
+                   Foreground="Bisque"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Margin="0,0,0,0"/>
+
+      
+        <Pivot x:Name="settingsPivot" Grid.Row="1" SelectionChanged="settingsPivot_SelectionChanged">
+            <PivotItem   Header="Settings" BorderThickness="1" >
+                <StackPanel>
+                <TextBlock x:Name="SettingsDescr" 
+                               TextWrapping="Wrap"
+                               FontSize="24"
+                               TextAlignment="Justify"></TextBlock>
+                </StackPanel>
             </PivotItem>
-            <PivotItem Header="PivotItem 1">
-                <Grid/>
+            <PivotItem Header="About">
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <Image x:Name="appLogo"
+                               Grid.Row="0"
+                               HorizontalAlignment="Left"
+                               Source="/Resources/tile176.jpg"
+                               Width="50"
+                               Height="50"
+                               Margin="10"
+                               ></Image>
+                        
+                        <StackPanel>
+                            <TextBlock Text="Dota 2 Picker" 
+                                       FontSize="32" 
+                                       VerticalAlignment="Top" 
+                                       FontWeight="SemiBold" />
+
+                            <TextBlock Text="By RRSoft Copyright 2016"
+                                       VerticalAlignment="Bottom"/>
+
+                        </StackPanel>
+
+                        <TextBlock Text="v1.0"
+                                   FontSize="22"
+                                   Margin="15,10,0,0"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Right"
+                                   />
+
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1">
+
+                        <TextBlock x:Name="DescrStaticTxt"
+                                   Text="Description:"
+                                   Margin="10"
+                                   FontSize="18"/>
+
+                        <TextBlock x:Name="AboutDescr" 
+                                   TextWrapping="Wrap"
+                                   FontSize="14"
+                                   Margin="10,0,10,0"
+                                   Opacity="80"
+                                   TextAlignment="Justify"/>
+
+                        <TextBlock x:Name="Contacts"
+                                   Text="Contacts:"
+                                   Margin="10,10,0,0"
+                                   FontSize="18"/>
+
+                        <StackPanel Orientation="Horizontal" Padding="0">
+
+                            <TextBlock Text="&#xE715;" 
+                                       FontFamily="Segoe MDL2 Assets"
+                                       FontSize="22"
+                                       Margin="10,3,0,0"
+                                       VerticalAlignment="Center"
+                                       Foreground="#3b5998"/>
+
+                            <Button x:Name="emailBnt" 
+                                Content="dota2Picker@gmail.com"
+                                FontFamily="Segoe UI"
+                                Foreground="#158BBF"
+                                VerticalAlignment="Center"
+                                Padding="5"
+                                FontSize="18"
+                                Template="{StaticResource NoAnimation}"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Padding="0">
+
+                            <TextBlock Text="&#xE0EC;" 
+                                       FontFamily="Resources/Fonts/flaticon.ttf#SVG Font"
+                                       FontSize="22"
+                                       Margin="10,3,0,0"
+                                       VerticalAlignment="Center"
+                                       Foreground="#12A5F4"/>
+
+                            <Button x:Name="SkypeBnt" 
+                                Content="dota2skype"
+                                FontFamily="Segoe UI"
+                                Foreground="#158BBF"
+                                VerticalAlignment="Center"
+                                Padding="5"
+                                FontSize="18"
+                                Template="{StaticResource NoAnimation}"/>
+                        </StackPanel>
+
+                        <TextBlock x:Name="Follow"
+                                   Text="Follow us:"
+                                   Margin="10,10,0,0"
+                                   FontSize="18"/>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="facebook"
+                                    FontFamily="Resources/Fonts/flaticon.ttf#SVG Font"
+                                    FontSize="22"
+                                    Width="40"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Right"
+                                    Height="40"
+                                    Margin="10"
+                                    Foreground="White"
+                                    Background="#3b5998"
+                                    FontWeight="Bold"
+                                    Content="&#xE05D;"/>
+
+                            <Button x:Name="twitter"
+                                    FontFamily="Resources/Fonts/flaticon.ttf#SVG Font"
+                                    FontSize="22"
+                                    Width="40"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Right"
+                                    Height="40"
+                                    Margin="10"
+                                    Foreground="#55acee"
+                                    FontWeight="Bold"
+                                    Content="&#xE10F;"/>
+
+                        </StackPanel>
+
+
+                        <StackPanel Orientation="Horizontal" Padding="0">
+
+                            <TextBlock Text="&#xE734;" 
+                                       FontFamily="Segoe MDL2 Assets"
+                                       FontSize="22"
+                                       Margin="10,3,0,0"
+                                       VerticalAlignment="Center"
+                                       Foreground="#12A5F4"/>
+
+                            <Button x:Name="Rate" 
+                                Content="Rate and Review"
+                                FontFamily="Segoe UI"
+                                Foreground="#158BBF"
+                                VerticalAlignment="Center"
+                                Padding="5"
+                                FontSize="18"
+                                Template="{StaticResource NoAnimation}"/>
+                        </StackPanel>
+
+                    </StackPanel>
+
+
+                </Grid>
             </PivotItem>
-            <PivotItem Header="PivotItem 1">
-                <Grid/>
+            <PivotItem Header="Privacy statement">
+                <StackPanel>
+                    <TextBlock x:Name="PrivacyDescr" 
+                               TextWrapping="Wrap"
+                               FontSize="24"
+                               TextAlignment="Justify"></TextBlock>
+                </StackPanel>
             </PivotItem>
         </Pivot>
 
 
+        <!--Hamburger Menu -->
+        <Button Name ="HamburgerButton" 
+                FontFamily="Segoe MDL2 Assets" 
+                Content="&#xE700;" 
+                FontSize="36"
+                Background="Transparent"
+                Grid.Row="0"
+                Grid.Column="0"
+                Click="HamburgerButton_Click" />
+
+        <SplitView Name="MySplitView" 
+                   Grid.Row="1"
+                   Grid.RowSpan="6"
+                   Height="Auto"
+                   Grid.ColumnSpan="3"
+                   DisplayMode="CompactOverlay"
+                   OpenPaneLength="190" 
+                   CompactPaneLength="0" 
+                   HorizontalAlignment="Left"
+                   ManipulationMode="TranslateX">
+
+            <SplitView.Pane>
+                <Grid x:Name="GridPane">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <ListBox SelectionMode="Single"
+                         Name="IconsListBox" 
+                         Grid.Row="0"
+                         Grid.RowSpan="4"
+                         Background="#2b2b2b"
+                         SelectionChanged="IconsListBox_SelectionChanged">
+
+                        <!--First Item of the list -->
+                        <ListBoxItem >
+                            <StackPanel Orientation="Horizontal" >
+                                <!--Symbol-->
+                                <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       Foreground="White" 
+                                       FontSize="32"
+                                       VerticalAlignment="Center"
+                                       Text="&#xE8A9;" />
+                                <!--Text-->
+                                <TextBlock Name="AllHeroes"
+                                       Text="All Heroes" 
+                                       FontSize="18" 
+                                       VerticalAlignment="Bottom"
+                                       Foreground="White" 
+                                       Margin="15,0,0,0" 
+                                       FontFamily="Segoe UI" />
+                            </StackPanel>
+                        </ListBoxItem>
+
+                        <!--Second Item-->
+                        <ListBoxItem >
+                            <StackPanel Orientation="Horizontal">
+                                <!--Symbol -->
+                                <Image Source="ms-appx:///Resources/strength.png"
+                                   Stretch="Fill"
+                                   Width="32"
+                                   Height="32"
+                                   VerticalAlignment="Top"
+                                   Margin="0,0,0,0"
+                                   HorizontalAlignment="Center"/>
+                                <!-- Text -->
+                                <TextBlock Text="Strength" 
+                                       FontSize="18"
+                                       Foreground="White" 
+                                       Margin="15,0,0,0" 
+                                       VerticalAlignment="Bottom"
+                                       FontFamily="Segoe UI" />
+                            </StackPanel>
+                        </ListBoxItem>
+
+                        <!--Third Item-->
+                        <ListBoxItem >
+                            <StackPanel Orientation="Horizontal">
+                                <!--Symbol-->
+                                <Image Source="ms-appx:///Resources/agility.png"
+                                   Stretch="Fill"
+                                   Width="32"
+                                   Height="32"
+                                   VerticalAlignment="Top"
+                                   Margin="0,0,0,0"
+                                   HorizontalAlignment="Center"/>
+
+                                <!--Text-->
+                                <TextBlock Text="Agility" 
+                                       FontSize="18" 
+                                       Foreground="White" 
+                                       Margin="15,0,0,0" 
+                                       VerticalAlignment="Bottom"
+                                       FontFamily="Segoe UI" />
+                            </StackPanel>
+                        </ListBoxItem>
+
+                        <!--Fourth Item-->
+                        <ListBoxItem >
+                            <StackPanel Orientation="Horizontal">
+                                <!--Symbol-->
+                                <Image Source="ms-appx:///Resources/intelligence.png"
+                                   Stretch="Fill"
+                                   Width="32"
+                                   Height="32"
+                                   VerticalAlignment="Top"
+                                   Margin="0,0,0,0"
+                                   HorizontalAlignment="Center"/>
+
+                                <!--Text-->
+                                <TextBlock Text="Intelligence" 
+                                       FontSize="18" 
+                                       Foreground="White"
+                                       Margin="15,0,0,0"
+                                       VerticalAlignment="Bottom"
+                                       FontFamily="Segoe UI" />
+                            </StackPanel>
+                        </ListBoxItem>
+
+                    </ListBox>
+                    <ListBox SelectionMode="Single"
+                         Name="SettingsListBox" 
+                         Grid.Row="4"
+                         Background="#2b2b2b"
+                         BorderThickness="0,2,0,0"
+                         BorderBrush="White"
+                         SelectionChanged="SettingsListBox_SelectionChanged"
+                         ScrollViewer.VerticalScrollMode="Auto">
+
+                        <ListBoxItem VerticalAlignment="Bottom" Style="{StaticResource SettingsStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <!--Symbol-->
+                                <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       Foreground="White" 
+                                       FontSize="24"
+                                       VerticalAlignment="Center"
+                                       Text="&#xE939;"
+                                       Margin="3,0,0,0"/>
+                                <!--Text-->
+                                <TextBlock Text="Tips" 
+                                       FontSize="18" 
+                                       VerticalAlignment="Bottom"
+                                       Foreground="White" 
+                                       Margin="18,0,0,0" 
+                                       FontFamily="Segoe UI" />
+                            </StackPanel>
+                        </ListBoxItem>
+
+                        <ListBoxItem  VerticalAlignment="Bottom" Style="{StaticResource SettingsStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <!--Symbol-->
+                                <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       Foreground="White" 
+                                       FontSize="24"
+                                       VerticalAlignment="Center"
+                                       Text="&#xE115;"
+                                       Margin="3,0,0,0"/>
+                                <!--Text-->
+                                <TextBlock Text="Settings" 
+                                       FontSize="18" 
+                                       VerticalAlignment="Bottom"
+                                       Foreground="White" 
+                                       Margin="18,0,0,0" 
+                                       FontFamily="Segoe UI" />
+                            </StackPanel>
+                        </ListBoxItem>
+                    </ListBox>
+                </Grid>
+            </SplitView.Pane>
+        </SplitView>
 
     </Grid>
 </Page>
