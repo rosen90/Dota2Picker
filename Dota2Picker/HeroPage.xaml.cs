@@ -92,8 +92,6 @@ namespace Dota2Picker
             //Old Behavior
             //EnableProgressRing();
             //heroRoles.Text = await Task.Run( () => GetHeroRoles(ChosenHero.id));
-            //GetWeakAgainstHeroes();
-            //GetStrongAgainstHeroes();
             //DisableProgressRing();
 
             //New Test Behavior
@@ -105,7 +103,7 @@ namespace Dota2Picker
             }
 
             ct = new CancellationTokenSource();
-
+            
             heroRoles.Text = await Task.Run(() => GetHeroRoles(ChosenHero.id), ct.Token);
 
             IsWeakList.ItemsSource = await Task.Run(() => DataBaseConnector.dbInstance.GetWeakAgainst(heroID), ct.Token);
@@ -128,19 +126,9 @@ namespace Dota2Picker
         }
         #endregion
 
-        public void GetWeakAgainstHeroes()
+        private async Task<string> GetHeroRoles(int heroIndex)
         {
-            IsWeakList.ItemsSource = DataBaseConnector.dbInstance.GetWeakAgainst(heroID);
-        }
-
-        public void GetStrongAgainstHeroes()
-        {
-            IsStrongList.ItemsSource = DataBaseConnector.dbInstance.GetStrongAgainst(heroID);
-        }
-
-        private string GetHeroRoles(int heroIndex)
-        {
-            List<Role> heroRoles = DataBaseConnector.dbInstance.GetHeroRoles(heroIndex);
+            List<Role> heroRoles = await DataBaseConnector.dbInstance.GetHeroRoles(heroIndex);
 
             string roles = "";
 
@@ -200,6 +188,7 @@ namespace Dota2Picker
 
         private void IconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            BaseViewObject.bvoInstance.lastHeroView = IconsListBox.SelectedIndex;
             this.Frame.Navigate(typeof(MainPage), IconsListBox.SelectedIndex);
         }
 

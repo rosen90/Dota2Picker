@@ -10,6 +10,7 @@ using Dota2Picker.Models;
 using Windows.UI.Xaml.Navigation;
 using System.Linq;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -27,13 +28,8 @@ namespace Dota2Picker
             this.InitializeComponent();
             InitializeUi();
 
-            this.Unloaded += (sender, e) =>
-            {
-                gridViewHeroes.ItemsSource = null;
-            };
+            //gridViewHeroes.ItemsSource = DataBaseConnector.AllHeroesList;
 
-            gridViewHeroes.ItemsSource = DataBaseConnector.AllHeroesList;
-            
             MainGrid.ManipulationMode = ManipulationModes.TranslateRailsX;
 
             CheckDeviceOrientation();
@@ -50,6 +46,18 @@ namespace Dota2Picker
 
         }
 
+        #region ProgressRing
+        private void EnableProgressRing()
+        {
+            progressRing.IsActive = true;
+            progressRing.Visibility = Visibility.Visible;
+        }
+        private void DisableProgressRing()
+        {
+            progressRing.IsActive = false;
+            progressRing.Visibility = Visibility.Collapsed;
+        }
+        #endregion
         private void MainGrid_ManipulationCompleted(object sender, ManipulationCompletedRoutedEventArgs e)
         {
             x2 = (int)e.Position.X;
@@ -129,15 +137,16 @@ namespace Dota2Picker
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            int id;
-            if(Int32.TryParse(e.Parameter.ToString(), out id))
-            UpdateGridViewItems(id);
+            IconsListBox.SelectionChanged -= IconsListBox_SelectionChanged;
+            IconsListBox.SelectedIndex = BaseViewObject.bvoInstance.lastHeroView;
+            IconsListBox.SelectionChanged += IconsListBox_SelectionChanged;
+            UpdateGridViewItems(BaseViewObject.bvoInstance.lastHeroView);
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
-            gridViewHeroes.ItemsSource = null;
+            Window.Current.SizeChanged -= CheckDeviceOrientation;
         }
 
         private void GridView_ItemClick(object sender, ItemClickEventArgs e)
@@ -164,29 +173,31 @@ namespace Dota2Picker
             
         }
 
-        private void UpdateGridViewItems ( int idx)
+        private async void UpdateGridViewItems ( int idx)
         {
+            EnableProgressRing();
             switch (idx)
             {
                 case 0:
-                    gridViewHeroes.ItemsSource = DataBaseConnector.AllHeroesList;
+                    gridViewHeroes.ItemsSource = await DataBaseConnector.dbInstance.getAllHeroes();
                     MySplitView.IsPaneOpen = false;
                     break;
                 case 1:
-                    gridViewHeroes.ItemsSource = DataBaseConnector.HeroesByStrengthList;
+                    gridViewHeroes.ItemsSource = await DataBaseConnector.dbInstance.getHeroesByStrength();
                     MySplitView.IsPaneOpen = false;
                     break;
                 case 2:
-                    gridViewHeroes.ItemsSource = DataBaseConnector.HeroesByAgilityList;
+                    gridViewHeroes.ItemsSource = await DataBaseConnector.dbInstance.getHeroesByAgility();
                     MySplitView.IsPaneOpen = false;
                     break;
                 case 3:
-                    gridViewHeroes.ItemsSource = DataBaseConnector.HeroesByIntelligenceList;
+                    gridViewHeroes.ItemsSource = await DataBaseConnector.dbInstance.getHeroesByIntelligence();
                     MySplitView.IsPaneOpen = false;
                     break;
                 default:
                     break;
             }
+            DisableProgressRing();
         }
 
         private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)

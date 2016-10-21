@@ -9,5 +9,6 @@ namespace Dota2Picker.Models
     class Role
     {
         public string name { get; set; }
+        
     }
 }

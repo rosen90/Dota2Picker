@@ -6,14 +6,34 @@ using System.IO;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.Storage;
+using SQLite.Net;
+using SQLite.Net.Async;
+using SQLite.Net.Platform.WinRT;
 
 namespace Dota2Picker.Objects
 {
     class DataBaseConnector
     {
-
         public const string dbName = "HeroData.db";
+        /*          connection element for SQLite universal platform            */
+        //private static string dbFilePath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "HeroData.db");
+        Func<SQLiteConnectionWithLock> connectionFactory =
+                new Func<SQLiteConnectionWithLock>(
+                    () =>
+                    new SQLiteConnectionWithLock(
+                        new SQLitePlatformWinRT(),
+        new SQLiteConnectionString(dbName, storeDateTimeAsTicks: false)));
+
+
         private static DataBaseConnector db = new DataBaseConnector();
+
+        private SQLiteAsyncConnection GetDbConnectionAsync()
+        {
+            var asyncConnection = new SQLiteAsyncConnection(connectionFactory);
+
+            return asyncConnection;
+        }
+
         public static DataBaseConnector dbInstance
         {
             get {
@@ -33,113 +53,100 @@ namespace Dota2Picker.Objects
         {
           
         }
-
-        public void LoadAllHeroes()
-        {
-             getAllHeroes();
-        }
-        
-        public async void LoadHeroesByAttribute()
-        {
-            await Task.Run( () => getHeroesByAgility());
-            await Task.Run( () => getHeroesByIntelligence());
-            await Task.Run( () => getHeroesByStrength());
-        }
-        
         
         //Get All Heroes From DataBase
-        public void getAllHeroes()
+        public async Task<List<Hero>> getAllHeroes()
         {
-            //< get records > 
+            if (AllHeroesList.Count == 0) { 
+             //< get records > 
             string query = @"SELECT hero.id, hero.name, hero.attack_id, hero.attribute_id, hero.role_id, attack.type AS type_name, attribute.name AS attribute_name FROM 
                             Heroes hero, AttackType attack, Attribute attribute Where hero.attack_id = attack.id AND
                             hero.attribute_id = attribute.id";
 
-            using (var statement = new SQLite.SQLiteConnection(dbName))
-            {
-                 AllHeroesList = statement.Query<Hero>(query);
+            var connection = this.GetDbConnectionAsync();
+            
+            AllHeroesList = await  connection.QueryAsync<Hero>(query);
             }
+            return AllHeroesList;
         }
 
-        public void getHeroesByStrength()
+        public async Task<List<Hero>> getHeroesByStrength()
         {
-            //< get records > 
-            string query = @"SELECT hero.id, hero.name, hero.attack_id, hero.attribute_id, hero.role_id, attack.type AS type_name, attribute.name AS attribute_name FROM 
-                            Heroes hero, AttackType attack, Attribute attribute Where hero.attack_id = attack.id AND
-                            hero.attribute_id = attribute.id AND hero.attribute_id = 1";
+            if ( HeroesByStrengthList.Count == 0)
+            { 
+                //< get records > 
+                string query = @"SELECT hero.id, hero.name, hero.attack_id, hero.attribute_id, hero.role_id, attack.type AS type_name, attribute.name AS attribute_name FROM 
+                                Heroes hero, AttackType attack, Attribute attribute Where hero.attack_id = attack.id AND
+                                hero.attribute_id = attribute.id AND hero.attribute_id = 1";
+                var connection = this.GetDbConnectionAsync();
 
-            using (var statement = new SQLite.SQLiteConnection(dbName))
-            {
-                HeroesByStrengthList = statement.Query<Hero>(query);
+                HeroesByStrengthList = await connection.QueryAsync<Hero>(query);
             }
+            return HeroesByStrengthList;
         }
 
-        public void getHeroesByAgility()
+        public async Task<List<Hero>> getHeroesByAgility()
         {
-            //< get records > 
-            string query = @"SELECT hero.id, hero.name, hero.attack_id, hero.attribute_id, hero.role_id, attack.type AS type_name, attribute.name AS attribute_name FROM 
-                            Heroes hero, AttackType attack, Attribute attribute Where hero.attack_id = attack.id AND
-                            hero.attribute_id = attribute.id AND hero.attribute_id = 2";
-
-            using (var statement = new SQLite.SQLiteConnection(dbName))
+            if ( HeroesByAgilityList.Count == 0)
             {
-                HeroesByAgilityList = statement.Query<Hero>(query);
+                //< get records > 
+                string query = @"SELECT hero.id, hero.name, hero.attack_id, hero.attribute_id, hero.role_id, attack.type AS type_name, attribute.name AS attribute_name FROM 
+                                Heroes hero, AttackType attack, Attribute attribute Where hero.attack_id = attack.id AND
+                                hero.attribute_id = attribute.id AND hero.attribute_id = 2";
+                var connection = this.GetDbConnectionAsync();
+                HeroesByAgilityList = await connection.QueryAsync<Hero>(query);
             }
+            return HeroesByAgilityList;
         }
 
-        public void getHeroesByIntelligence()
+        public async Task<List<Hero>> getHeroesByIntelligence()
         {
-            //< get records > 
-            string query = @"SELECT hero.id, hero.name, hero.attack_id, hero.attribute_id, hero.role_id, attack.type AS type_name, attribute.name AS attribute_name FROM 
-                            Heroes hero, AttackType attack, Attribute attribute Where hero.attack_id = attack.id AND
-                            hero.attribute_id = attribute.id AND hero.attribute_id = 3";
-
-            using (var statement = new SQLite.SQLiteConnection(dbName))
-            {
-                HeroesByIntelligenceList = statement.Query<Hero>(query);
+            if ( HeroesByIntelligenceList.Count == 0 )
+            { 
+                //< get records > 
+                string query = @"SELECT hero.id, hero.name, hero.attack_id, hero.attribute_id, hero.role_id, attack.type AS type_name, attribute.name AS attribute_name FROM 
+                                Heroes hero, AttackType attack, Attribute attribute Where hero.attack_id = attack.id AND
+                                hero.attribute_id = attribute.id AND hero.attribute_id = 3";
+                var connection = this.GetDbConnectionAsync();
+                HeroesByIntelligenceList = await connection.QueryAsync<Hero>(query);
             }
+            return HeroesByIntelligenceList;
         }
 
         //Get all heroes that picked hero is weak against
-        public List<IsWeakAgainst> GetWeakAgainst(int heroIndex)
+        public async Task<List<IsWeakAgainst>> GetWeakAgainst(int heroIndex)
         {
             List<IsWeakAgainst> heroes = new List<IsWeakAgainst>();
 
             string query = @"SELECT w.weak_id, h.name, cp.type  FROM Heroes h, Weak w, CounterType cp WHERE w.weak_id = h.id and w.counter_type = cp.id and w.id = " + heroIndex;
 
-            using (var statement = new SQLite.SQLiteConnection(dbName))
-            {
-                heroes = statement.Query<IsWeakAgainst>(query);
-            }
+            var connection = this.GetDbConnectionAsync();
+            heroes = await connection.QueryAsync<IsWeakAgainst>(query);
 
             return heroes;
         }
 
         //Get all heroes that picked hero is strong against
-        public List<IsStrongAgainst> GetStrongAgainst(int heroIndex)
+        public async Task<List<IsStrongAgainst>> GetStrongAgainst(int heroIndex)
         {
             List<IsStrongAgainst> heroes = new List<IsStrongAgainst>();
 
             string query = @"SELECT s.strong_id, h.name, cp.type  FROM Heroes h, Strong s, CounterType cp WHERE s.strong_id = h.id and s.counter_type = cp.id and s.id = " + heroIndex;
 
-            using (var statement = new SQLite.SQLiteConnection(dbName))
-            {
-                heroes = statement.Query<IsStrongAgainst>(query);
-            }
+            var connection = this.GetDbConnectionAsync();
+            heroes = await connection.QueryAsync<IsStrongAgainst>(query);
 
             return heroes;
         }
 
-        public List<Role> GetHeroRoles(int heroIndex)
+        public async Task<List<Role>> GetHeroRoles(int heroIndex)
         {
             List<Role> roles = new List<Role>();
 
             string query = @"SELECT r.name FROM Roles r, HeroRoles hr WHERE hr.id_role = r.id AND hr.id_hero = " + heroIndex;
 
-            using (var statement = new SQLite.SQLiteConnection(dbName))
-            {
-                roles = statement.Query<Role>(query);
-            }
+            var connection = this.GetDbConnectionAsync();
+            roles = await connection.QueryAsync<Role>(query);
 
             return roles;
         }

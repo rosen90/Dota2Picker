@@ -8,7 +8,8 @@
     mc:Ignorable="d"
     xmlns:localModels="using:Dota2Picker.Models"
     ManipulationStarted="MainGrid_ManipulationStarted" 
-	ManipulationCompleted=" MainGrid_ManipulationCompleted">
+	ManipulationCompleted=" MainGrid_ManipulationCompleted"
+    NavigationCacheMode="Enabled">
 
     <Grid x:Name="MainGrid" Background="#61369f">
 
@@ -35,6 +36,7 @@
         <Rectangle Grid.Row="0" 
                    Grid.ColumnSpan="10" 
                    Fill="#572b98" />
+
 
         <!-- Main SearchBox -->
         <TextBox x:Name="SearchBox" 
@@ -278,5 +280,15 @@
             </SplitView.Pane>
         </SplitView>
 
+        <ProgressRing Name="progressRing"
+                      IsActive="True"
+                      Grid.RowSpan="3"
+                      Grid.ColumnSpan="10"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Center"
+                      Height="100"
+                      Width="100"
+                      Foreground="Bisque">
+        </ProgressRing>
     </Grid>
 </Page>

@@ -243,7 +243,6 @@
     <Compile Include="Objects\BaseViewObject.cs" />
     <Compile Include="Objects\Constants.cs" />
     <Compile Include="Objects\DataBaseConnector.cs" />
-    <Compile Include="Objects\SQLite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
