@@ -61,7 +61,7 @@ namespace Dota2Picker
                 return temp.ToString();
         }
 
-        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             //sr = await getStreamReader();
             //AboutDescr.Text = await Task.Run(() => getTextByIdentifier (sr, Constants.settingsIdentifiers[pivotIndex]));
