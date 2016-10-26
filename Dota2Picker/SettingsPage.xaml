@@ -38,7 +38,7 @@
 
       
         <Pivot x:Name="settingsPivot" Grid.Row="1" SelectionChanged="settingsPivot_SelectionChanged">
-            <PivotItem   Header="Settings" BorderThickness="1" >
+            <PivotItem   Header="Settings" BorderThickness="1">
                 <StackPanel>
                 <TextBlock x:Name="SettingsDescr" 
                                TextWrapping="Wrap"
@@ -46,17 +46,21 @@
                                TextAlignment="Justify"></TextBlock>
                 </StackPanel>
             </PivotItem>
-            <PivotItem Header="About">
-                <Grid>
+            <PivotItem Header="About" >
 
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
+                <ScrollViewer >
+                        <Grid>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
 
 
-                    <StackPanel Grid.Row="0" Orientation="Horizontal">
-                        <Image x:Name="appLogo"
+
+
+                        <StackPanel Grid.Row="0" Orientation="Horizontal">
+                            <Image x:Name="appLogo"
                                Grid.Row="0"
                                HorizontalAlignment="Left"
                                Source="/Resources/tile176.jpg"
@@ -64,56 +68,56 @@
                                Height="50"
                                Margin="10"
                                ></Image>
-                        
-                        <StackPanel>
-                            <TextBlock Text="Dota 2 Picker" 
+
+                            <StackPanel>
+                                <TextBlock Text="Dota 2 Picker" 
                                        FontSize="32" 
                                        VerticalAlignment="Top" 
                                        FontWeight="SemiBold" />
 
-                            <TextBlock Text="By RRSoft Copyright 2016"
+                                <TextBlock Text="By RRSoft Copyright 2016"
                                        VerticalAlignment="Bottom"/>
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Text="v1.0"
+                            <TextBlock Text="v1.0"
                                    FontSize="22"
                                    Margin="15,10,0,0"
                                    VerticalAlignment="Top"
                                    HorizontalAlignment="Right"
                                    />
 
-                    </StackPanel>
+                        </StackPanel>
 
-                    <StackPanel Grid.Row="1">
+                        <StackPanel Grid.Row="1" >
 
-                        <TextBlock x:Name="DescrStaticTxt"
+                            <TextBlock x:Name="DescrStaticTxt"
                                    Text="Description:"
                                    Margin="10"
                                    FontSize="18"/>
 
-                        <TextBlock x:Name="AboutDescr" 
+                            <TextBlock x:Name="AboutDescr" 
                                    TextWrapping="Wrap"
                                    FontSize="14"
                                    Margin="10,0,10,0"
                                    Opacity="80"
                                    TextAlignment="Justify"/>
 
-                        <TextBlock x:Name="Contacts"
+                            <TextBlock x:Name="Contacts"
                                    Text="Contacts:"
                                    Margin="10,10,0,0"
                                    FontSize="18"/>
 
-                        <StackPanel Orientation="Horizontal" Padding="0">
+                            <StackPanel Orientation="Horizontal" Padding="0">
 
-                            <TextBlock Text="&#xE715;" 
+                                <TextBlock Text="&#xE715;" 
                                        FontFamily="Segoe MDL2 Assets"
                                        FontSize="22"
                                        Margin="10,3,0,0"
                                        VerticalAlignment="Center"
                                        Foreground="#3b5998"/>
 
-                            <Button x:Name="emailBnt" 
+                                <Button x:Name="emailBnt" 
                                 Content="dota2Picker@gmail.com"
                                 FontFamily="Segoe UI"
                                 Foreground="#158BBF"
@@ -121,18 +125,18 @@
                                 Padding="5"
                                 FontSize="18"
                                 Template="{StaticResource NoAnimation}"/>
-                        </StackPanel>
+                            </StackPanel>
 
-                        <StackPanel Orientation="Horizontal" Padding="0">
+                            <StackPanel Orientation="Horizontal" Padding="0">
 
-                            <TextBlock Text="&#xE0EC;" 
+                                <TextBlock Text="&#xE0EC;" 
                                        FontFamily="Resources/Fonts/flaticon.ttf#SVG Font"
                                        FontSize="22"
                                        Margin="10,3,0,0"
                                        VerticalAlignment="Center"
                                        Foreground="#12A5F4"/>
 
-                            <Button x:Name="SkypeBnt" 
+                                <Button x:Name="SkypeBnt" 
                                 Content="dota2skype"
                                 FontFamily="Segoe UI"
                                 Foreground="#158BBF"
@@ -140,15 +144,15 @@
                                 Padding="5"
                                 FontSize="18"
                                 Template="{StaticResource NoAnimation}"/>
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock x:Name="Follow"
+                            <TextBlock x:Name="Follow"
                                    Text="Follow us:"
                                    Margin="10,10,0,0"
                                    FontSize="18"/>
 
-                        <StackPanel Orientation="Horizontal">
-                            <Button x:Name="facebook"
+                            <StackPanel Orientation="Horizontal">
+                                <Button x:Name="facebook"
                                     FontFamily="Resources/Fonts/flaticon.ttf#SVG Font"
                                     FontSize="22"
                                     Width="40"
@@ -161,7 +165,7 @@
                                     FontWeight="Bold"
                                     Content="&#xE05D;"/>
 
-                            <Button x:Name="twitter"
+                                <Button x:Name="twitter"
                                     FontFamily="Resources/Fonts/flaticon.ttf#SVG Font"
                                     FontSize="22"
                                     Width="40"
@@ -173,19 +177,19 @@
                                     FontWeight="Bold"
                                     Content="&#xE10F;"/>
 
-                        </StackPanel>
+                            </StackPanel>
 
 
-                        <StackPanel Orientation="Horizontal" Padding="0">
+                            <StackPanel Orientation="Horizontal" Padding="0">
 
-                            <TextBlock Text="&#xE734;" 
+                                <TextBlock Text="&#xE734;" 
                                        FontFamily="Segoe MDL2 Assets"
                                        FontSize="22"
                                        Margin="10,3,0,0"
                                        VerticalAlignment="Center"
                                        Foreground="#12A5F4"/>
 
-                            <Button x:Name="Rate" 
+                                <Button x:Name="Rate" 
                                 Content="Rate and Review"
                                 FontFamily="Segoe UI"
                                 Foreground="#158BBF"
@@ -193,12 +197,11 @@
                                 Padding="5"
                                 FontSize="18"
                                 Template="{StaticResource NoAnimation}"/>
+                            </StackPanel>
+
                         </StackPanel>
-
-                    </StackPanel>
-
-
-                </Grid>
+                    </Grid>
+                </ScrollViewer>
             </PivotItem>
             <PivotItem Header="Privacy statement">
                 <StackPanel>

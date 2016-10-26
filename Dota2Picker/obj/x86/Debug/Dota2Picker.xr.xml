@@ -50,6 +50,7 @@
       <RootProperty Name="VerticalScrollBarVisibility" />
       <RootProperty Name="VerticalScrollMode" />
       <RootProperty Name="ZoomMode" />
+      <RootProperty Name="Content" />
       <RootMethod Name="GetHorizontalScrollMode" />
       <RootMethod Name="SetHorizontalScrollMode" />
       <RootMethod Name="GetVerticalScrollMode" />

@@ -50,6 +50,7 @@
       <RootProperty Name="VerticalScrollBarVisibility" />
       <RootProperty Name="VerticalScrollMode" />
       <RootProperty Name="ZoomMode" />
+      <RootProperty Name="Content" />
       <RootMethod Name="GetHorizontalScrollMode" />
       <RootMethod Name="SetHorizontalScrollMode" />
       <RootMethod Name="GetVerticalScrollMode" />
@@ -259,6 +260,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
+      <RootProperty Name="NavigationCacheMode" />
       <RootEvent Name="ManipulationStarted" />
       <RootEvent Name="ManipulationCompleted" />
     </RootType>
@@ -277,6 +279,8 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
       <RootProperty Name="Name" />
