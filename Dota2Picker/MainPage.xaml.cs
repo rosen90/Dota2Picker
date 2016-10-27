@@ -10,7 +10,6 @@ using Dota2Picker.Models;
 using Windows.UI.Xaml.Navigation;
 using System.Linq;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -110,7 +109,7 @@ namespace Dota2Picker
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
         }
-
+        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ShowHideSearchBox = !ShowHideSearchBox;
@@ -127,6 +126,8 @@ namespace Dota2Picker
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            MySplitView.IsPaneOpen = false;
+            SettingsListBox.SelectedIndex = -1;
             IconsListBox.SelectionChanged -= IconsListBox_SelectionChanged;
             IconsListBox.SelectedIndex = BaseViewObject.bvoInstance.lastHeroView;
             IconsListBox.SelectionChanged += IconsListBox_SelectionChanged;
@@ -137,6 +138,7 @@ namespace Dota2Picker
         {
             base.OnNavigatedFrom(e);
             Window.Current.SizeChanged -= CheckDeviceOrientation;
+            MySplitView.IsPaneOpen = false;
         }
 
         private void GridView_ItemClick(object sender, ItemClickEventArgs e)
@@ -149,10 +151,20 @@ namespace Dota2Picker
 
         private void SettingsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //Temporary
-            if (SettingsListBox.SelectedIndex == 1)
+            switch (SettingsListBox.SelectedIndex)
             {
-                this.Frame.Navigate(typeof(SettingsPage));
+                case 0:
+                    {
+                        MySplitView.IsPaneOpen = false;
+                        this.Frame.Navigate(typeof(TipsPage));
+                    } 
+                    break;
+                case 1:
+                    {
+                        MySplitView.IsPaneOpen = false;
+                        this.Frame.Navigate(typeof(SettingsPage));
+                    }
+                    break;
             }
         }
 

@@ -28,13 +28,13 @@
     <AppXManifest Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-10-27T11:06:52.085</Modified>
+      <Modified>2016-10-27T13:22:45.021</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.exe">
       <PackagePath>entrypoint\Dota2Picker.exe</PackagePath>
-      <Modified>2016-10-27T11:06:48.126</Modified>
+      <Modified>2016-10-27T13:22:43.520</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\karad\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1057,7 +1057,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Dota2Picker.xr.xml">
       <PackagePath>Dota2Picker.xr.xml</PackagePath>
-      <Modified>2016-10-27T10:39:17.764</Modified>
+      <Modified>2016-10-27T13:22:43.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.14393.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -1070,11 +1070,11 @@
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-10-27T11:06:51.084</Modified>
+      <Modified>2016-10-27T13:22:44.447</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\Dota2Picker\Dota2Picker\bin\x86\Debug\Core\Dota2Picker.exe">
       <PackagePath>Dota2Picker.exe</PackagePath>
-      <Modified>2016-10-27T11:06:52.079</Modified>
+      <Modified>2016-10-27T13:22:45.016</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

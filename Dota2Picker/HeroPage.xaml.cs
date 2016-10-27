@@ -67,7 +67,8 @@ namespace Dota2Picker
             Thickness margin = heroTitle.Margin;
             margin.Left = -(int)HamburgerButton.ActualWidth;
             heroTitle.Margin = margin;
-            
+            SettingsListBox.SelectedIndex = -1;
+
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -194,10 +195,14 @@ namespace Dota2Picker
 
         private void SettingsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //Temporary
-            if (SettingsListBox.SelectedIndex == 1)
+            switch (SettingsListBox.SelectedIndex)
             {
-                this.Frame.Navigate(typeof(SettingsPage));
+                case 0:
+                    this.Frame.Navigate(typeof(TipsPage));
+                    break;
+                case 1:
+                    this.Frame.Navigate(typeof(SettingsPage));
+                    break;
             }
         }
 

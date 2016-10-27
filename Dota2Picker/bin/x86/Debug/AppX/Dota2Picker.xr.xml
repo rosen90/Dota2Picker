@@ -345,5 +345,6 @@
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Dota2Picker.SettingsPage" />
+    <RootType FullName="Dota2Picker.TipsPage" />
   </Roots.RootTypes>
 </Roots>

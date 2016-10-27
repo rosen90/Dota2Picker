@@ -339,6 +339,12 @@
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
     <RootType FullName="Dota2Picker.SettingsPage" />
+    <RootType FullName="Dota2Picker.TipsPage" />
   </Roots.RootTypes>
 </Roots>
