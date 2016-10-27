@@ -17,6 +17,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Dota2Picker.Objects;
 using System.Diagnostics;
+using System.Threading.Tasks;
+using Windows.Storage;
 
 namespace Dota2Picker
 {
@@ -30,6 +32,59 @@ namespace Dota2Picker
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            checkIfFileExist();
+        }
+
+        private async void checkIfFileExist()
+        {
+            if (!await CheckDbAsync("Settings"))
+            {
+                await CopyFile("Settings");
+            }
+
+            if (!await CheckDbAsync("SelectedLang"))
+            {
+                await CopyFile("Selectedlang");
+            }
+        }
+
+        public async Task<bool> CheckDbAsync(string fileName)
+        {
+            bool fileExist = true;
+
+            try
+            {
+                StorageFile sf = await ApplicationData.Current.LocalFolder.GetFileAsync(fileName + ".txt");
+            }
+            catch (Exception)
+            {
+                fileExist = false;
+            }
+
+            return fileExist;
+        }
+
+
+        public async Task CopyFile(string fileName)
+        {
+            bool isFileExisting = false;
+
+            try
+            {
+                StorageFile storageFile = await ApplicationData.Current.LocalFolder.GetFileAsync(fileName + ".txt");
+                isFileExisting = true;
+            }
+            catch
+            {
+                isFileExisting = false;
+            }
+
+            if (!isFileExisting)
+            {
+                var file = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Resources/Multilanguage/Settings/" + fileName + ".txt"));
+                await file.CopyAsync(ApplicationData.Current.LocalFolder);
+            }
         }
 
         protected override void OnLaunched(LaunchActivatedEventArgs e)

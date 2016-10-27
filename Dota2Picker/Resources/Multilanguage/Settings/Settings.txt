@@ -1,5 +1,5 @@
 ﻿[SETTINGS_TEXT]
-Opisand dsadasdasas
+Select tips language:
 [SETTINGS_TEXT]
 
 [ABOUT_TEXT]

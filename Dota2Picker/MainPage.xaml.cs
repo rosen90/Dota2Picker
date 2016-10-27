@@ -28,21 +28,11 @@ namespace Dota2Picker
             this.InitializeComponent();
             InitializeUi();
 
-            //gridViewHeroes.ItemsSource = DataBaseConnector.AllHeroesList;
-
             MainGrid.ManipulationMode = ManipulationModes.TranslateRailsX;
 
             CheckDeviceOrientation();
             Window.Current.SizeChanged += CheckDeviceOrientation;
             UpdateGridViewItems(BaseViewObject.bvoInstance.lastHeroView);
-            
-            /*--------------------- Only For Debug -------------------*/
-            //AllHeroesList = db.getAllHeroes();
-
-            //List<Hero> EsIsWeakAgainst = db.GetWeakAgainst(1); // 1 means hero index. It depends on user choice
-
-            //List<Hero> EsIsStrongAgainst = db.GetStrongAgainst(1); // 1 means hero index. It depends on user choice
-            /* ------------------------------------------------------ */
 
         }
 

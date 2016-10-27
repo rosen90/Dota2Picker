@@ -39,12 +39,64 @@
       
         <Pivot x:Name="settingsPivot" Grid.Row="1" SelectionChanged="settingsPivot_SelectionChanged">
             <PivotItem   Header="Settings" BorderThickness="1">
-                <StackPanel>
-                <TextBlock x:Name="SettingsDescr" 
-                               TextWrapping="Wrap"
-                               FontSize="24"
-                               TextAlignment="Justify"></TextBlock>
-                </StackPanel>
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                        <TextBlock x:Name="SettingsDescr"
+                                   Grid.Row="0"
+                                   TextWrapping="Wrap"
+                                   FontSize="18"
+                                   VerticalAlignment="Center"
+                                   Margin="0,20,0,0"
+                                   TextAlignment="Justify"/>
+
+                    <ComboBox x:Name="Languages" 
+                              ItemsSource="{Binding}"
+                              Grid.Row="1"
+                              Margin="0,5,0,0"
+                              Grid.ColumnSpan="2"
+                              SelectionChanged="Languages_SelectionChanged"
+                              />
+
+                    <StackPanel Grid.Row="2" Orientation="Horizontal">
+                        <Button x:Name="ads"
+                                FontFamily="Resources/Fonts/flaticon.ttf#SVG Font"
+                                FontSize="22"
+                                Width="40"
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Left"
+                                Height="40"
+                                Margin="0,20,0,0"
+                                Foreground="White"
+                                Background="#3b5998"
+                                FontWeight="Bold"
+                                Content="&#xE101;"/>
+
+                        <Button x:Name="removeAds" 
+                                Content="Remove Ads"
+                                FontFamily="Segoe UI"
+                                Foreground="#3b5998"
+                                Margin="3,15,0,0"
+                                VerticalAlignment="Top"
+                                Padding="0"
+                                FontSize="18"
+                                Template="{StaticResource NoAnimation}"/>
+
+                    </StackPanel>
+
+
+                </Grid>
             </PivotItem>
             <PivotItem Header="About" >
 
@@ -118,13 +170,13 @@
                                        Foreground="#3b5998"/>
 
                                 <Button x:Name="emailBnt" 
-                                Content="dota2Picker@gmail.com"
-                                FontFamily="Segoe UI"
-                                Foreground="#158BBF"
-                                VerticalAlignment="Center"
-                                Padding="5"
-                                FontSize="18"
-                                Template="{StaticResource NoAnimation}"/>
+                                        Content="dota2Picker@gmail.com"
+                                        FontFamily="Segoe UI"
+                                        Foreground="#158BBF"
+                                        VerticalAlignment="Center"
+                                        Padding="5"
+                                        FontSize="18"
+                                        Template="{StaticResource NoAnimation}"/>
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal" Padding="0">
@@ -137,13 +189,13 @@
                                        Foreground="#12A5F4"/>
 
                                 <Button x:Name="SkypeBnt" 
-                                Content="dota2skype"
-                                FontFamily="Segoe UI"
-                                Foreground="#158BBF"
-                                VerticalAlignment="Center"
-                                Padding="5"
-                                FontSize="18"
-                                Template="{StaticResource NoAnimation}"/>
+                                        Content="dota2skype"
+                                        FontFamily="Segoe UI"
+                                        Foreground="#158BBF"
+                                        VerticalAlignment="Center"
+                                        Padding="5"
+                                        FontSize="18"
+                                        Template="{StaticResource NoAnimation}"/>
                             </StackPanel>
 
                             <TextBlock x:Name="Follow"

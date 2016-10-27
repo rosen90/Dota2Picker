@@ -387,7 +387,7 @@
                                        Text="&#xE939;"
                                        Margin="3,0,0,0"/>
                                 <!--Text-->
-                                <TextBlock Text="Tutorial" 
+                                <TextBlock Text="Tips" 
                                        FontSize="18" 
                                        VerticalAlignment="Bottom"
                                        Foreground="White" 

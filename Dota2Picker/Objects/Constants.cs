@@ -16,5 +16,7 @@ namespace Dota2Picker.Objects
         public const int ListPortraitOff = 0;
 
         public static string[] settingsIdentifiers = { "[SETTINGS_TEXT]", "[ABOUT_TEXT]", "[PRIVACY_TEXT]" };
+
+        public static string[] tipsLenguages = { "English", "Russian", "Turkish", "French", "German", "Greek", "Български" };
     }
 }
